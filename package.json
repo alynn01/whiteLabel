@@ -7,7 +7,7 @@
     "test": "npx cypress run --env APP_ENV=staging",
     "cy-client:stage": "npx cypress open --env APP_ENV=staging",
     "cy-client:prod": "npx cypress open --env APP_ENV=production",
-    "cy_run": "HOST=hhttps://devcardholder.essolo.com/ cypress run --browser chrome",
+    "cy_run": "HOST=https://devcardholder.essolo.com/ cypress run --browser chrome",
     "auth": "npm run cy_run -- --spec 'cypress/e2e/auth/**/*",
     "cards": "npm run cy_run -- --spec 'cypress/e2e/cards/**/*",
     "profiles": "npm run cy_run -- --spec 'cypress/e2e/profiles/**/*",
