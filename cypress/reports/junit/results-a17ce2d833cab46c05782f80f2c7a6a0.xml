@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="151.921" tests="2" failures="1">
+  <testsuite name="Root Suite" timestamp="2023-03-13T10:09:19" tests="0" file="cypress/e2e/cards/loadCard.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Load Card" timestamp="2023-03-13T10:09:19" tests="2" time="151.908" failures="1">
+    <testcase name="Load Card Test that the user is able to access load physical card" time="50.563" classname="Test that the user is able to access load physical card">
+      <failure message="Timed out retrying after 8000ms: Expected to find content: &apos;Load Virtual Card&apos; within the element: &lt;p.cardTitle&gt; but never did." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 8000ms: Expected to find content: 'Load Virtual Card' within the element: <p.cardTitle> but never did.
+    at LoadCardPage.accessLoadCardPage (webpack:///./cypress/support/pages/cards/loadCard-page.js:30:59)
+    at Context.eval (webpack:///./cypress/e2e/cards/loadCard.cy.js:20:21)]]></failure>
+    </testcase>
+    <testcase name="Load Card Test that the user is able to access load virtual card" time="36.376" classname="Test that the user is able to access load virtual card">
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -27,7 +27,7 @@ export class LoadCardPage {
   accessLoadCardPage() {
     this.moreOptionsDropdown().click({ force: true });
     this.loadCardDropdownItem().click();
-    this.loadCardPageTitle().contains("Load Virtual Card").should("be.visible");
+    this.loadCardPageTitle().contains("Load Physical Card").should("be.visible");
   }
 
   loadPhysicalCard() {

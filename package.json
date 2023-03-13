@@ -19,6 +19,11 @@
   "license": "ISC",
   "dependencies": {
     "cypress": "^12.7.0",
-    "cypress-terminal-report": "^5.0.2"
+    "cypress-mochawesome-reporter": "^3.3.0",
+    "cypress-multi-reporters": "^1.6.2",
+    "cypress-terminal-report": "^5.0.2",
+    "junit-report-merger": "^5.0.0",
+    "mocha": "^10.2.0",
+    "mocha-junit-reporter": "^2.2.0"
   }
 }

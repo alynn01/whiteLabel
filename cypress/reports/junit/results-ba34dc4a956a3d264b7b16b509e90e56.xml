@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="19.292" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2023-03-13T10:13:20" tests="0" file="cypress/e2e/settings/changeLanguage.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Settings" timestamp="2023-03-13T10:13:20" tests="1" time="19.268" failures="0">
+    <testcase name="Settings Test that user is able to navigate to the change language page" time="19.254" classname="Test that user is able to navigate to the change language page">
+    </testcase>
+  </testsuite>
+</testsuites>
