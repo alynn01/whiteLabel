@@ -12,12 +12,12 @@ describe('Card to card transfer', () => {
       loginPage.accessLoginModal();
     });
 
-    it('Test that the user is able to activate physical card', () => {
+    it('Test that the user is able to access activate virtual card', () => {
         loginPage.login(cardHolder.email, cardHolder.password);
         cy.get('.onboarding-title').contains('Welcome').should('be.visible');
         cy.get('.shepherd-footer > .start').contains(`Not interested`).click()
-       cardsPage.accessCardsPage();
-       createVirtualCard.createCard();
+        cardsPage.accessCardsPage();
+        createVirtualCard.createCard();
         
     })
 

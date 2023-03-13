@@ -12,23 +12,13 @@ describe('Card to card transfer', () => {
       loginPage.accessLoginModal();
     });
 
-    it('Test that the user is able to withdraw from physical card', () => {
+    it('Test that the user is able to access card to card transfer', () => {
         loginPage.login(cardHolder.email, cardHolder.password);
         cy.get('.onboarding-title').contains('Welcome').should('be.visible');
         cy.get('.shepherd-footer > .start').contains(`Not interested`).click()
         cardsPage.accessCardsPage();
         cardToCardTransferPage.accessCardToCardTransferPage();
-        cardToCardTransferPage.enterTransferDetails()
-       
-        
+        cardToCardTransferPage.enterTransferDetails() 
     })
-
-    it('Test that the user is able to withdraw from virtual card', () => {
-      loginPage.login(cardHolder.email, cardHolder.password);
-      cy.get('.onboarding-title').contains('Welcome').should('be.visible');
-      cy.get('.shepherd-footer > .start').contains(`Not interested`).click()
-      cardsPage.accessCardsPage();
-      
-  })
 
 })

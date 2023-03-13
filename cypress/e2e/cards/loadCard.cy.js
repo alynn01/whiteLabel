@@ -12,7 +12,7 @@ describe('Load Card', () => {
       loginPage.accessLoginModal();
     });
 
-    it('Test that the user is able to load physical card', () => {
+    it('Test that the user is able to access load physical card', () => {
         loginPage.login(cardHolder.email, cardHolder.password);
         cy.get('.onboarding-title').contains('Welcome').should('be.visible');
         cy.get('.shepherd-footer > .start').contains(`Not interested`).click()
@@ -21,7 +21,7 @@ describe('Load Card', () => {
         loadCardPage.loadPhysicalCard();
     })
 
-    it('Test that the user is able to load virtual card', () => {
+    it('Test that the user is able to access load virtual card', () => {
       loginPage.login(cardHolder.email, cardHolder.password);
       cy.get('.onboarding-title').contains('Welcome').should('be.visible');
       cy.get('.shepherd-footer > .start').contains(`Not interested`).click()
