@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress run --APP_ENV",
+    "test": "npx cypress run --env",
     "cy-client:stage": "npx cypress open --env APP_ENV=staging",
     "cy-client:prod": "npx cypress open --env APP_ENV=production",
     "cy_run": "HOST=hhttps://devcardholder.essolo.com/ cypress run --browser chrome",
