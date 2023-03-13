@@ -4,10 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "cy:report": "cypress run",
     "cy-client:stage": "npx cypress open --env APP_ENV=staging",
     "cy-client:prod": "npx cypress open --env APP_ENV=production",
     "cy_run": "HOST=hhttps://devcardholder.essolo.com/ cypress run --browser chrome",
-    "auth": "npm run cy_run -- --spec 'cypress/e2e/auth/**/*"
+    "auth": "npm run cy_run -- --spec 'cypress/e2e/auth/**/*",
+    "cards": "npm run cy_run -- --spec 'cypress/e2e/cards/**/*",
+    "profiles": "npm run cy_run -- --spec 'cypress/e2e/profiles/**/*",
+    "settings": "npm run cy_run -- --spec 'cypress/e2e/settings/**/*",
+    "transactions": "npm run cy_run -- --spec 'cypress/e2e/transactions/**/*",
+    "accounts": "npm run cy_run -- --spec 'cypress/e2e/accounts/**/*'"
   },
   "author": "",
   "license": "ISC",
