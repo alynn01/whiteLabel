@@ -1,0 +1,129 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-03-13T14:25:21.892Z",
+    "end": "2023-03-13T14:25:59.278Z",
+    "duration": 37386,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4b8b8c08-b4f3-47d2-abb7-e524c69955d0",
+      "title": "",
+      "fullFile": "cypress/e2e/cards/card.cy.js",
+      "file": "cypress/e2e/cards/card.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a3d08a06-c877-491e-b8ce-195a30adab2f",
+          "title": "Cards",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test that user is able to navigate to the cards page",
+              "fullTitle": "Cards Test that user is able to navigate to the cards page",
+              "timedOut": null,
+              "duration": 20737,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.login(cardHolder.email, cardHolder.password);\ncy.get('.onboarding-title').contains('Welcome').should('be.visible');\ncy.get('.shepherd-footer > .start').contains(`Not interested`).click();\ncardsPage.accessCardsPage();",
+              "err": {},
+              "uuid": "b0e98703-090d-4513-b0cb-72fd492bf8fb",
+              "parentUUID": "a3d08a06-c877-491e-b8ce-195a30adab2f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test that the user is able to view details of virtual cards",
+              "fullTitle": "Cards Test that the user is able to view details of virtual cards",
+              "timedOut": null,
+              "duration": 16622,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.login(cardHolder.email, cardHolder.password);\ncy.get('.onboarding-title').contains('Welcome').should('be.visible');\ncy.get('.shepherd-footer > .start').contains(`Not interested`).click();\ncardsPage.accessCardsPage();\ncardsPage.viewVirtualCards();",
+              "err": {},
+              "uuid": "731267c7-8511-43b2-8125-1d1057071d05",
+              "parentUUID": "a3d08a06-c877-491e-b8ce-195a30adab2f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b0e98703-090d-4513-b0cb-72fd492bf8fb",
+            "731267c7-8511-43b2-8125-1d1057071d05"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 37359,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/.jsons",
+        "charts": true,
+        "reportPageTitle": "My Test Suite",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

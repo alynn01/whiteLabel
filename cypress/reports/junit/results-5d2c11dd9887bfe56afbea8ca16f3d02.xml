@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="37.386" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2023-03-13T14:25:21" tests="0" file="cypress/e2e/cards/card.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Cards" timestamp="2023-03-13T14:25:21" tests="2" time="37.380" failures="0">
+    <testcase name="Cards Test that user is able to navigate to the cards page" time="20.737" classname="Test that user is able to navigate to the cards page">
+    </testcase>
+    <testcase name="Cards Test that the user is able to view details of virtual cards" time="16.622" classname="Test that the user is able to view details of virtual cards">
+    </testcase>
+  </testsuite>
+</testsuites>

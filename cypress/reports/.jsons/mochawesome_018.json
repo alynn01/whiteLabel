@@ -1,0 +1,129 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-03-13T14:27:50.356Z",
+    "end": "2023-03-13T14:28:30.939Z",
+    "duration": 40583,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2222b3ce-8610-4a39-b89a-f54f3eb39b7a",
+      "title": "",
+      "fullFile": "cypress/e2e/cards/withdrawFromCard.cy.js",
+      "file": "cypress/e2e/cards/withdrawFromCard.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9e75e9b5-56d2-4e43-a896-45e56917ecb2",
+          "title": "Withdraw from card",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test that the user is able to access withdraw from physical card",
+              "fullTitle": "Withdraw from card Test that the user is able to access withdraw from physical card",
+              "timedOut": null,
+              "duration": 19318,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.login(cardHolder.email, cardHolder.password);\ncy.get('.onboarding-title').contains('Welcome').should('be.visible');\ncy.get('.shepherd-footer > .start').contains(`Not interested`).click();\ncardsPage.accessCardsPage();\nwithdrawalPage.accessWithdrawFromCardPage();\nwithdrawalPage.enterWithdrawalDetails();",
+              "err": {},
+              "uuid": "b88892fb-f5af-45f9-8e9a-5285a2cd9b1b",
+              "parentUUID": "9e75e9b5-56d2-4e43-a896-45e56917ecb2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test that the user is able to access withdraw from virtual card",
+              "fullTitle": "Withdraw from card Test that the user is able to access withdraw from virtual card",
+              "timedOut": null,
+              "duration": 21239,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.login(cardHolder.email, cardHolder.password);\ncy.get('.onboarding-title').contains('Welcome').should('be.visible');\ncy.get('.shepherd-footer > .start').contains(`Not interested`).click();\ncardsPage.accessCardsPage();\nwithdrawalPage.withdrawFromVirtualCard();",
+              "err": {},
+              "uuid": "508eb80a-3770-41a8-beca-fa8c2827743c",
+              "parentUUID": "9e75e9b5-56d2-4e43-a896-45e56917ecb2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b88892fb-f5af-45f9-8e9a-5285a2cd9b1b",
+            "508eb80a-3770-41a8-beca-fa8c2827743c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 40557,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/.jsons",
+        "charts": true,
+        "reportPageTitle": "My Test Suite",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
