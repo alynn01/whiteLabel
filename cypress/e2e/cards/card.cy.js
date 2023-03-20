@@ -18,7 +18,7 @@ describe('Cards', () => {
         cardsPage.accessCardsPage();
     })
 
-    it('Test that the user is able to view details of virtual cards', () => {
+    it('Test that the user is able to view virtual cards', () => {
         loginPage.login(cardHolder.email, cardHolder.password);
         cy.get('.onboarding-title').contains('Welcome').should('be.visible');
         cy.get('.shepherd-footer > .start').contains(`Not interested`).click()

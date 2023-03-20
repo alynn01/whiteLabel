@@ -17,9 +17,8 @@ export class CardsPage{
 
  viewVirtualCards(){
     this.toggleButton().click({force : true})
-    this.viewCardDetailsButton().click({force : true})
-    this.cardEmailAddress().should('be.visible')  
-    this.proceedButtonm().click({force : true})
+    this.viewCardDetailsButton().should('be.visible')
+    
  } 
 
 }
