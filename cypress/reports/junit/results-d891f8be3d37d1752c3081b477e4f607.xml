@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="33.170" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2023-03-20T08:26:18" tests="0" file="cypress/e2e/transactions/transaction.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Transactions" timestamp="2023-03-20T08:26:18" tests="2" time="33.156" failures="0">
+    <testcase name="Transactions Test that user is able to navigate to the transactions page" time="17.075" classname="Test that user is able to navigate to the transactions page">
+    </testcase>
+    <testcase name="Transactions Test that user is able to navigate to the transactions details page" time="16.060" classname="Test that user is able to navigate to the transactions details page">
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -7,6 +7,7 @@ module.exports = defineConfig({
   watchForFileChanges: false,
   viewportWidth: 1280,
   viewportHeight: 800,
+  projectId: "cfxgxe",
   retries: {
     runMode: 2,
     openMode: 0,

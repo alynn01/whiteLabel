@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="74.555" tests="1" failures="1">
+  <testsuite name="Root Suite" timestamp="2023-03-20T08:24:40" tests="0" file="cypress/e2e/accounts/account.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Account" timestamp="2023-03-20T08:24:40" tests="1" time="74.547" failures="1">
+    <testcase name="Account Test that user is able to navigate to the accounts page" time="20.173" classname="Test that user is able to navigate to the accounts page">
+      <failure message="Timed out retrying after 8000ms: Expected to find content: &apos; $ 124.00 &apos; within the element: &lt;span.wallet-amount&gt; but never did." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 8000ms: Expected to find content: ' $ 124.00 ' within the element: <span.wallet-amount> but never did.
+    at AccountPage.accessAccountsPage (webpack:///./cypress/support/pages/accounts/account-page.js:10:30)
+    at Context.eval (webpack:///./cypress/e2e/accounts/account.cy.js:18:21)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

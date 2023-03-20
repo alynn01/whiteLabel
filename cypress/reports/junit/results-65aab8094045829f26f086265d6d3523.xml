@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="106.764" tests="2" failures="1">
+  <testsuite name="Root Suite" timestamp="2023-03-20T08:19:08" tests="0" file="cypress/e2e/cards/card.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Cards" timestamp="2023-03-20T08:19:08" tests="2" time="106.755" failures="1">
+    <testcase name="Cards Test that user is able to navigate to the cards page" time="19.308" classname="Test that user is able to navigate to the cards page">
+    </testcase>
+    <testcase name="Cards Test that the user is able to view details of virtual cards" time="31.688" classname="Test that the user is able to view details of virtual cards">
+      <failure message="Timed out retrying after 8000ms: expected &apos;&lt;span.riders-box_value&gt;&apos; to be &apos;visible&apos;
+
+This element `&lt;span.riders-box_value&gt;` is not visible because its parent `&lt;app-select-otp&gt;` has CSS property: `display: none`" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 8000ms: expected '<span.riders-box_value>' to be 'visible'
+
+This element `<span.riders-box_value>` is not visible because its parent `<app-select-otp>` has CSS property: `display: none`
+    at CardsPage.viewVirtualCards (webpack:///./cypress/support/pages/cards/card-page.js:21:28)
+    at Context.eval (webpack:///./cypress/e2e/cards/card.cy.js:26:18)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

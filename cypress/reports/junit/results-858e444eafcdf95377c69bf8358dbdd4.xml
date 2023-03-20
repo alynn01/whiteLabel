@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="72.106" tests="1" failures="1">
+  <testsuite name="Root Suite" timestamp="2023-03-20T08:20:56" tests="0" file="cypress/e2e/cards/cardToCardTransfer.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Card to card transfer" timestamp="2023-03-20T08:20:56" tests="1" time="72.097" failures="1">
+    <testcase name="Card to card transfer Test that the user is able to access card to card transfer" time="25.200" classname="Test that the user is able to access card to card transfer">
+      <failure message="`cy.type()` can only be called on a single element. Your subject contained 2 elements.
+
+https://on.cypress.io/type" type="CypressError"><![CDATA[CypressError: `cy.type()` can only be called on a single element. Your subject contained 2 elements.
+
+https://on.cypress.io/type
+    at Context.type (https://devcardholder.essolo.com/__cypress/runner/cypress_runner.js:134324:76)
+    at wrapped (https://devcardholder.essolo.com/__cypress/runner/cypress_runner.js:151172:19)
+From Your Spec Code:
+    at CardToCardTransferPage.enterTransferDetails (webpack:///./cypress/support/pages/cards/cardToCardTransfer-page.js:31:26)
+    at Context.eval (webpack:///./cypress/e2e/cards/cardToCardTransfer.cy.js:21:31)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

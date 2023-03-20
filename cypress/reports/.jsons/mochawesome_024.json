@@ -1,0 +1,134 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-03-20T08:19:08.797Z",
+    "end": "2023-03-20T08:20:55.561Z",
+    "duration": 106764,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "096d0455-24f8-4e54-add7-21e7ea2a6ff9",
+      "title": "",
+      "fullFile": "cypress/e2e/cards/card.cy.js",
+      "file": "cypress/e2e/cards/card.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "42b5cba3-da71-4478-9ce8-5ab9cfb21444",
+          "title": "Cards",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test that user is able to navigate to the cards page",
+              "fullTitle": "Cards Test that user is able to navigate to the cards page",
+              "timedOut": null,
+              "duration": 19308,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.login(cardHolder.email, cardHolder.password);\ncy.get('.onboarding-title').contains('Welcome').should('be.visible');\ncy.get('.shepherd-footer > .start').contains(`Not interested`).click();\ncardsPage.accessCardsPage();",
+              "err": {},
+              "uuid": "db81ea32-3cdd-4ee9-80e1-c13b93a9fe0d",
+              "parentUUID": "42b5cba3-da71-4478-9ce8-5ab9cfb21444",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test that the user is able to view details of virtual cards",
+              "fullTitle": "Cards Test that the user is able to view details of virtual cards",
+              "timedOut": null,
+              "duration": 28447,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/cards/card.cy.js/Cards -- Test that the user is able to view details of virtual cards (failed).png\"\n      }\n    ],\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/cards/card.cy.js/Cards -- Test that the user is able to view details of virtual cards (failed) (attempt 2).png\"\n      }\n    ],\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/cards/card.cy.js/Cards -- Test that the user is able to view details of virtual cards (failed) (attempt 3).png\"\n      }\n    ]\n  ]\n}",
+              "code": "loginPage.login(cardHolder.email, cardHolder.password);\ncy.get('.onboarding-title').contains('Welcome').should('be.visible');\ncy.get('.shepherd-footer > .start').contains(`Not interested`).click();\ncardsPage.accessCardsPage();\ncardsPage.viewVirtualCards();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 8000ms: expected '<span.riders-box_value>' to be 'visible'\n\nThis element `<span.riders-box_value>` is not visible because its parent `<app-select-otp>` has CSS property: `display: none`",
+                "estack": "AssertionError: Timed out retrying after 8000ms: expected '<span.riders-box_value>' to be 'visible'\n\nThis element `<span.riders-box_value>` is not visible because its parent `<app-select-otp>` has CSS property: `display: none`\n    at CardsPage.viewVirtualCards (webpack:///./cypress/support/pages/cards/card-page.js:21:28)\n    at Context.eval (webpack:///./cypress/e2e/cards/card.cy.js:26:18)",
+                "diff": null
+              },
+              "uuid": "dc6dd48e-cae8-4249-9e36-c1b9d103c785",
+              "parentUUID": "42b5cba3-da71-4478-9ce8-5ab9cfb21444",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "db81ea32-3cdd-4ee9-80e1-c13b93a9fe0d"
+          ],
+          "failures": [
+            "dc6dd48e-cae8-4249-9e36-c1b9d103c785"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 47755,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/.jsons",
+        "charts": true,
+        "reportPageTitle": "My Test Suite",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
