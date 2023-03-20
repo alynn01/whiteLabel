@@ -1,9 +1,9 @@
 import { sharedData } from "../../../fixtures/index";
 
 export class LoginPage{
-    emailField = () => cy.get(':nth-child(1) > .column > form-input-large > .formInputWrapper');
-    passwordField = () => cy.get(':nth-child(2) > .column > form-input-large > .formInputWrapper');
-    loginButton = () => cy.get('.form-button').contains('Login');
+    emailField = () => cy.get('input[name="email"]');
+    passwordField = () => cy.get('input[name="password"]');
+    loginButton = () => cy.get(`[class="button-text"]`).contains("Log in");
 
     accessLoginModal () {
         cy.visit(sharedData.paths.login);
