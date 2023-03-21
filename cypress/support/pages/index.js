@@ -9,4 +9,5 @@ export * from "./cards/cardToCardTransfer-page";
 export * from "./cards/activatePhysicalCard-page";
 export * from "./cards/createVirtualCard-page";
 export * from "./settings/changeLanguage";
-export * from "./accounts/createUser-page"
+export * from "./accounts/createUser-page";
+export * from "./accounts/createProgram-page"
