@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="325.882" tests="1" failures="1">
+  <testsuite name="Root Suite" timestamp="2023-03-21T17:05:20" tests="0" file="cypress/e2e/cards/cardToCardTransfer.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Card to card transfer" timestamp="2023-03-21T17:05:20" tests="1" time="325.875" failures="1">
+    <testcase name="Card to card transfer Test that the user is able to access card to card transfer" time="100.691" classname="Test that the user is able to access card to card transfer">
+      <failure message="Timed out retrying after 80000ms: expected &apos;&lt;span&gt;&apos; to be &apos;visible&apos;
+
+This element `&lt;span&gt;` is not visible because it has CSS property: `position: fixed` and it&apos;s being covered by another element:
+
+`&lt;path d=&quot;M1280,800H0V0H1280V800ZM0,0a0,0,0,0,0-0,0V0a0,0,0,0,0,0,0H0a0,0,0,0,0,0-0V0a0,0,0,0,0-0-0Z&quot;&gt;&lt;/path&gt;`" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 80000ms: expected '<span>' to be 'visible'
+
+This element `<span>` is not visible because it has CSS property: `position: fixed` and it's being covered by another element:
+
+`<path d="M1280,800H0V0H1280V800ZM0,0a0,0,0,0,0-0,0V0a0,0,0,0,0,0,0H0a0,0,0,0,0,0-0V0a0,0,0,0,0-0-0Z"></path>`
+    at CardsPage.accessCardsPage (webpack:///./cypress/support/pages/cards/card-page.js:15:22)
+    at Context.eval (webpack:///./cypress/e2e/cards/cardToCardTransfer.cy.js:18:18)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

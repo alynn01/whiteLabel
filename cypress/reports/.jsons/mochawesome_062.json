@@ -1,0 +1,114 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-03-21T17:10:46.864Z",
+    "end": "2023-03-21T17:16:29.486Z",
+    "duration": 342622,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "29938798-d870-4938-ae64-531b939dc1b0",
+      "title": "",
+      "fullFile": "cypress/e2e/cards/createVirtualCard.cy.js",
+      "file": "cypress/e2e/cards/createVirtualCard.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9ff33545-6c63-4894-8978-97305d86fc2a",
+          "title": "Card to card transfer",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test that the user is able to access activate virtual card",
+              "fullTitle": "Card to card transfer Test that the user is able to access activate virtual card",
+              "timedOut": null,
+              "duration": 124361,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/cards/createVirtualCard.cy.js/Card to card transfer -- Test that the user is able to access activate virtual card (failed).png\"\n      }\n    ],\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/cards/createVirtualCard.cy.js/Card to card transfer -- Test that the user is able to access activate virtual card (failed) (attempt 2).png\"\n      }\n    ],\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/cards/createVirtualCard.cy.js/Card to card transfer -- Test that the user is able to access activate virtual card (failed) (attempt 3).png\"\n      }\n    ]\n  ]\n}",
+              "code": "loginPage.login(cardHolder.email, cardHolder.password);\ncy.get('.title').contains('Damilare').should('be.visible');\ncardsPage.accessCardsPage();\ncreateVirtualCard.createCard();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 80000ms: expected '<span>' to be 'visible'\n\nThis element `<span>` is not visible because it has CSS property: `position: fixed` and it's being covered by another element:\n\n`<path d=\"M1280,800H0V0H1280V800ZM0,0a0,0,0,0,0-0,0V0a0,0,0,0,0,0,0H0a0,0,0,0,0,0-0V0a0,0,0,0,0-0-0Z\"></path>`",
+                "estack": "AssertionError: Timed out retrying after 80000ms: expected '<span>' to be 'visible'\n\nThis element `<span>` is not visible because it has CSS property: `position: fixed` and it's being covered by another element:\n\n`<path d=\"M1280,800H0V0H1280V800ZM0,0a0,0,0,0,0-0,0V0a0,0,0,0,0,0,0H0a0,0,0,0,0,0-0V0a0,0,0,0,0-0-0Z\"></path>`\n    at CardsPage.accessCardsPage (webpack:///./cypress/support/pages/cards/card-page.js:15:22)\n    at Context.eval (webpack:///./cypress/e2e/cards/createVirtualCard.cy.js:18:18)",
+                "diff": null
+              },
+              "uuid": "00dfad68-7e04-41c9-a20c-b2dc62ac1e51",
+              "parentUUID": "9ff33545-6c63-4894-8978-97305d86fc2a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "00dfad68-7e04-41c9-a20c-b2dc62ac1e51"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 124361,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/.jsons",
+        "charts": true,
+        "reportPageTitle": "My Test Suite",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
