@@ -27,8 +27,8 @@ export class CreateUserPage {
     cy.get(".sc-csuSiG > :nth-child(6)").contains("Ama Test");
   createUserButton = () => cy.get(".button-text").contains("Create user");
 
-  accessPOPortal(email, password) {
-    cy.visit("https://devcompanyadmin.essolo.com/");
+  accessPOPortal(email, password, url) {
+    cy.visit(url);
     this.emailField().type(email);
     this.passwordField().type(password);
     this.loginButton().click({ force: true });

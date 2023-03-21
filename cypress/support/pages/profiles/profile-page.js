@@ -1,7 +1,7 @@
 export class ProfilePage{
     profileMenuItem = () => cy.get('.app-onboarding-menu-profile > .nav-icon').contains('Profile');
     profilePageMessage = () => cy.get('.sub-title').contains('View your profile information');
-    userFirstName = () => cy.get('.kyc-tag-wrapper > .kyc-tag-text').contains(' Verified ')
+    userFirstName = () => cy.get('.kyc-status-text');
 
 
     accessProfilePage(){

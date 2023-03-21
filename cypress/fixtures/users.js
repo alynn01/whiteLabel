@@ -16,7 +16,7 @@ export const role = {
       role: role.programOwner,
       email: "pomsia01@yopmail.com",
       password: "Test@123",
-      name: "Cypress Test 123 User",
+      urlPath: "https://devcompanyadmin.essolo.com/",
     },
     {
       role: role.cardHolder,
@@ -39,12 +39,12 @@ export const role = {
         role: role.programOwner,
         email: "damiuser001@yopmail.com",
         password: "Password@1",
-        name: "Cypress Test 123 User",
+        name: "",
       },
       {
         role: role.cardHolder,
-        email: "cypress-123@morressier.com",
-        password: "Morressier#1000",
+        email: "",
+        password: "",
       },
       
       {

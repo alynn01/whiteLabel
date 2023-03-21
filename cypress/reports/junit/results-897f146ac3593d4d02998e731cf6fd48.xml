@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.655" tests="1" failures="1">
+  <testsuite name="Root Suite" timestamp="2023-03-21T13:55:51" tests="0" file="cypress/e2e/accounts/createUser.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Create User" timestamp="2023-03-21T13:55:51" tests="1" time="0.647" failures="1">
+    <testcase name="Create User &quot;before each&quot; hook for &quot;Test that user is able to invite a new user to the organization&quot;" time="0.185" classname="&quot;before each&quot; hook for &quot;Test that user is able to invite a new user to the organization&quot;">
+      <failure message="`cy.visit()` must be called with a `url` or an `options` object containing a `url` as its 1st argument
+
+https://on.cypress.io/visit
+
+Because this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Create User`" type="CypressError"><![CDATA[CypressError: `cy.visit()` must be called with a `url` or an `options` object containing a `url` as its 1st argument
+
+https://on.cypress.io/visit
+
+Because this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Create User`
+    at Context.visit (https://devcardholder.essolo.com/__cypress/runner/cypress_runner.js:137870:78)
+    at wrapped (https://devcardholder.essolo.com/__cypress/runner/cypress_runner.js:151164:43)
+From Your Spec Code:
+    at CreateUserPage.accessPOPortal (webpack:///./cypress/support/pages/accounts/createUser-page.js:31:7)
+    at Context.eval (webpack:///./cypress/e2e/accounts/createUser.cy.js:11:18)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

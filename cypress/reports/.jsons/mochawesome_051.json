@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-03-21T13:59:49.762Z",
+    "end": "2023-03-21T14:00:31.458Z",
+    "duration": 41696,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "176278ab-e7d3-4b87-b4fc-bf519108bd49",
+      "title": "",
+      "fullFile": "cypress/e2e/cards/activatePhysicalCard.cy.js",
+      "file": "cypress/e2e/cards/activatePhysicalCard.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "52b80f60-ddc3-440e-97d0-7121a8b3069d",
+          "title": "Card to card transfer",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test that the user is able to activate physical card",
+              "fullTitle": "Card to card transfer Test that the user is able to activate physical card",
+              "timedOut": null,
+              "duration": 41665,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.login(cardHolder.email, cardHolder.password);\ncy.get('.title').contains('Damilare').should('be.visible');\ncardsPage.accessCardsPage();\nactivatePhysicalCard.enterCardActivationDetails();",
+              "err": {},
+              "uuid": "afd3df7e-d66b-4554-bb40-8fcb2341eeba",
+              "parentUUID": "52b80f60-ddc3-440e-97d0-7121a8b3069d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "afd3df7e-d66b-4554-bb40-8fcb2341eeba"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 41665,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/.jsons",
+        "charts": true,
+        "reportPageTitle": "My Test Suite",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

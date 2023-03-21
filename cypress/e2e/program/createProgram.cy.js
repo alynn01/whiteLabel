@@ -9,7 +9,7 @@ const programOwner = getProgramOwner();
 describe('Create Program', () => {
 
     beforeEach(() => {
-      newUserPage.accessPOPortal(programOwner.email, programOwner.password);
+      newUserPage.accessPOPortal(programOwner.email, programOwner.password, programOwner.urlPath);
     });
 
     it('Test that user is able to navigate to create program popup', () => {

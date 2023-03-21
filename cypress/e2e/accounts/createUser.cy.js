@@ -8,7 +8,7 @@ const programOwner = getProgramOwner();
 describe('Create User', () => {
 
     beforeEach(() => {
-      newUserPage.accessPOPortal(programOwner.email, programOwner.password);
+      newUserPage.accessPOPortal(programOwner.email, programOwner.password, programOwner.urlPath);
     });
 
     it('Test that user is able to invite a new user to the organization', () => {

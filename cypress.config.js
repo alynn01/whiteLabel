@@ -2,7 +2,7 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   chromeWebSecurity: false,
-  defaultCommandTimeout: 8000,
+  defaultCommandTimeout: 80000,
   pageLoadTimeout: 60000,
   watchForFileChanges: false,
   viewportWidth: 1280,

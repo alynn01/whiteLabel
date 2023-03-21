@@ -11,10 +11,9 @@ describe('Account', () => {
       loginPage.accessLoginModal();
     });
 
-    it.only('Test that user is able to navigate to the accounts page', () => {
+    it('Test that user is able to navigate to the accounts page', () => {
         loginPage.login(cardHolder.email, cardHolder.password);
-        cy.get('.onboarding-title').contains('Welcome').should('be.visible');
-        cy.get('.shepherd-footer > .start').contains(`Not interested`).click()
+        cy.get('.title').contains('Damilare').should('be.visible');
         accountsPage.accessAccountsPage()
     })
 })
