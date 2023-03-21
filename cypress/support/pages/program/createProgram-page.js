@@ -13,9 +13,6 @@ export class CreateProgramPage{
     createProgramButton = () => cy.get('.button-text').contains('Create program')
 
 
-    
-
-
     accessCreateProgram(){
         this.quickActionDropdown().click({force : true})
         this.createProgramItem().click()
