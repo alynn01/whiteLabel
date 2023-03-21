@@ -14,8 +14,7 @@ describe('Card to card transfer', () => {
 
     it('Test that the user is able to access activate virtual card', () => {
         loginPage.login(cardHolder.email, cardHolder.password);
-        cy.get('.onboarding-title').contains('Welcome').should('be.visible');
-        cy.get('.shepherd-footer > .start').contains(`Not interested`).click()
+        cy.get('.title').contains('Damilare').should('be.visible');
         cardsPage.accessCardsPage();
         createVirtualCard.createCard();
         
