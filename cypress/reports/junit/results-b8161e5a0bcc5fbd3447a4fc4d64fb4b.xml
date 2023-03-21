@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="663.174" tests="2" failures="2">
+  <testsuite name="Root Suite" timestamp="2023-03-21T17:41:36" tests="0" file="cypress/e2e/transactions/transaction.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Transactions" timestamp="2023-03-21T17:41:36" tests="2" time="663.167" failures="2">
+    <testcase name="Transactions Test that user is able to navigate to the transactions page" time="115.427" classname="Test that user is able to navigate to the transactions page">
+      <failure message="Timed out retrying after 80000ms: expected &apos;&lt;span.table-content.inner&gt;&apos; to be &apos;visible&apos;
+
+This element `&lt;span.table-content.inner&gt;` is not visible because it has CSS property: `position: fixed` and it&apos;s being covered by another element:
+
+`&lt;div class=&quot;shepherd-text&quot; id=&quot;overview-description&quot;&gt;...&lt;/div&gt;`" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 80000ms: expected '<span.table-content.inner>' to be 'visible'
+
+This element `<span.table-content.inner>` is not visible because it has CSS property: `position: fixed` and it's being covered by another element:
+
+`<div class="shepherd-text" id="overview-description">...</div>`
+    at TransactionPage.accessTransactionPage (webpack:///./cypress/support/pages/transactions/transaction-page.js:15:24)
+    at Context.eval (webpack:///./cypress/e2e/transactions/transaction.cy.js:17:24)]]></failure>
+    </testcase>
+    <testcase name="Transactions Test that user is able to navigate to the transactions details page" time="108.349" classname="Test that user is able to navigate to the transactions details page">
+      <failure message="Timed out retrying after 80000ms: expected &apos;&lt;span.table-content.inner&gt;&apos; to be &apos;visible&apos;
+
+This element `&lt;span.table-content.inner&gt;` is not visible because it has CSS property: `position: fixed` and it&apos;s being covered by another element:
+
+`&lt;div class=&quot;shepherd-text&quot; id=&quot;overview-description&quot;&gt;...&lt;/div&gt;`" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 80000ms: expected '<span.table-content.inner>' to be 'visible'
+
+This element `<span.table-content.inner>` is not visible because it has CSS property: `position: fixed` and it's being covered by another element:
+
+`<div class="shepherd-text" id="overview-description">...</div>`
+    at TransactionPage.accessTransactionPage (webpack:///./cypress/support/pages/transactions/transaction-page.js:15:24)
+    at Context.eval (webpack:///./cypress/e2e/transactions/transaction.cy.js:23:24)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>
