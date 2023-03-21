@@ -9,7 +9,7 @@ const programOwner = getProgramOwner();
 describe('Fund User', () => {
 
     beforeEach(() => {
-      newUserPage.accessPOPortal(programOwner.email, programOwner.password);
+      newUserPage.accessPOPortal(programOwner.email, programOwner.password, programOwner.url);
     });
 
     it('Test that user is able to navigate to fund user popup', () => {

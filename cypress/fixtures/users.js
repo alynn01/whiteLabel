@@ -16,7 +16,7 @@ export const role = {
       role: role.programOwner,
       email: "pomsia01@yopmail.com",
       password: "Test@123",
-      name: "Cypress Test 123 User",
+      url: "https://devcompanyadmin.essolo.com/",
     },
     {
       role: role.cardHolder,
