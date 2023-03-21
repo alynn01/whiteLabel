@@ -6,6 +6,7 @@ export class CardsPage{
  viewCardDetailsButton = () => cy.get("div[id='1'] div[class='card-detail-wrapper']").contains('View card details');
  cardEmailAddress = () => cy.get('#email > #wallet > .cardRow > .wallets_single').contains('via email')
  proceedButtonm = () => cy.get('.modal-footer-content > .formButton');
+ virtualCardNumber = () => cy.get('.cardNumber').contains(6316)
 
 
  accessCardsPage(){
@@ -16,8 +17,11 @@ export class CardsPage{
  }
 
  viewVirtualCards(){
-    this.toggleButton().click({force : true})
+    this.cardMenuItem().click();
+    cy.wait(5000)
+    this.toggleButton().click()
     this.viewCardDetailsButton().should('be.visible')
+    this.virtualCardNumber().should('be.visible')
     
  } 
 

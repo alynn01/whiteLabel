@@ -14,6 +14,8 @@ describe('Load Card', () => {
 
     it('Test that the user is able to access load physical card', () => {
         loginPage.login(cardHolder.email, cardHolder.password);
+        cy.get('.onboarding-title').contains('Welcome');
+        cy.get('.start').contains('Not interested').click();
         cy.get('.title').contains('Damilare').should('be.visible');
         cardsPage.accessCardsPage();
         loadCardPage.accessLoadCardPage();
@@ -22,6 +24,8 @@ describe('Load Card', () => {
 
     it('Test that the user is able to access load virtual card', () => {
       loginPage.login(cardHolder.email, cardHolder.password);
+      cy.get('.onboarding-title').contains('Welcome');
+      cy.get('.start').contains('Not interested').click();
       cy.get('.title').contains('Damilare').should('be.visible');
       cardsPage.accessCardsPage();
       loadCardPage.loadVirtualCard();
