@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="424.840" tests="2" failures="2">
+  <testsuite name="Root Suite" timestamp="2023-03-23T11:59:13" tests="0" file="cypress/e2e/cards/withdrawFromCard.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Withdraw from card" timestamp="2023-03-23T11:59:13" tests="2" time="424.832" failures="2">
+    <testcase name="Withdraw from card Test that the user is able to access withdraw from physical card" time="24.731" classname="Test that the user is able to access withdraw from physical card">
+      <failure message="Timed out retrying after 80000ms: Expected to find element: `.onboarding-title`, but never found it." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 80000ms: Expected to find element: `.onboarding-title`, but never found it.
+    at Context.eval (webpack:///./cypress/e2e/cards/withdrawFromCard.cy.js:17:11)]]></failure>
+    </testcase>
+    <testcase name="Withdraw from card Test that the user is able to access withdraw from virtual card" time="95.030" classname="Test that the user is able to access withdraw from virtual card">
+      <failure message="Timed out retrying after 80000ms: Expected to find content: &apos;Damilare&apos; within the element: &lt;h1.title&gt; but never did." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 80000ms: Expected to find content: 'Damilare' within the element: <h1.title> but never did.
+    at Context.eval (webpack:///./cypress/e2e/cards/withdrawFromCard.cy.js:30:44)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -13,22 +13,26 @@ describe('Withdraw from card', () => {
     });
 
     it('Test that the user is able to access withdraw from physical card', () => {
-        loginPage.login(cardHolder.email, cardHolder.password);
+        loginPage.login('damiuser001@yopmail.com', 'Password@1');
         cy.get('.onboarding-title').contains('Welcome');
         cy.get('.start').contains('Not interested').click();
         cy.get('.title').contains('Damilare').should('be.visible');
-        cardsPage.accessCardsPage();
+        cy.get('.app-onboarding-menu-cards > .nav-icon').click();
+        cy.wait(3000)
+        //cardsPage.accessCardsPage();
         withdrawalPage.accessWithdrawFromCardPage();
         withdrawalPage.enterWithdrawalDetails();
         
     })
 
     it('Test that the user is able to access withdraw from virtual card', () => {
-      loginPage.login(cardHolder.email, cardHolder.password);
+      loginPage.login('damiuser001@yopmail.com', 'Password@1');
       cy.get('.onboarding-title').contains('Welcome');
       cy.get('.start').contains('Not interested').click();
       cy.get('.title').contains('Damilare').should('be.visible');
-      cardsPage.accessCardsPage();
+      //cardsPage.accessCardsPage();
+      cy.get('.app-onboarding-menu-cards > .nav-icon').click();
+      cy.wait(3000)
       withdrawalPage.withdrawFromVirtualCard();
   })
 

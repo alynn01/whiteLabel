@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="251.667" tests="1" failures="1">
+  <testsuite name="Root Suite" timestamp="2023-03-27T12:39:16" tests="0" file="cypress/e2e/wallet/fundProgram.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Fund Program" timestamp="2023-03-27T12:39:16" tests="1" time="251.660" failures="1">
+    <testcase name="Fund Program &quot;before each&quot; hook for &quot;Test that user is able to navigate to fund program popup&quot;" time="81.796" classname="&quot;before each&quot; hook for &quot;Test that user is able to navigate to fund program popup&quot;">
+      <failure message="Timed out retrying after 80000ms: Expected to find element: `.sc-hhOBVt &gt; div`, but never found it.
+
+Because this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Fund Program`" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 80000ms: Expected to find element: `.sc-hhOBVt > div`, but never found it.
+
+Because this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Fund Program`
+    at CreateUserPage.eval [as welcomeMessage] (webpack:///./cypress/support/pages/accounts/createUser-page.js:5:28)
+    at CreateUserPage.accessPOPortal (webpack:///./cypress/support/pages/accounts/createUser-page.js:35:9)
+    at Context.eval (webpack:///./cypress/e2e/wallet/fundProgram.cy.js:12:18)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

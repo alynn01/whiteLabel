@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="10.225" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2023-03-29T20:52:02" tests="0" file="cypress/e2e/wallet/fundUser.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Fund User" timestamp="2023-03-29T20:52:02" tests="1" time="10.210" failures="0">
+    <testcase name="Fund User Test that user is able to navigate to fund user popup" time="10.199" classname="Test that user is able to navigate to fund user popup">
+    </testcase>
+  </testsuite>
+</testsuites>

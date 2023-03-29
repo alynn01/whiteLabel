@@ -6,7 +6,7 @@ const createVirtualCard = new CreateVirtualCardPage();
 const email = "guestone@qa.team";
 const password = "P@$sw0rd";
 
-describe('Card to card transfer', () => {
+describe('Create Virtual Cards', () => {
 
     beforeEach(() => {
       loginPage.accessLoginModal();

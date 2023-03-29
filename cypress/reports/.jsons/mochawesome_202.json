@@ -1,0 +1,129 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-03-29T19:06:53.250Z",
+    "end": "2023-03-29T19:07:37.140Z",
+    "duration": 43890,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "201183e3-76ba-4781-bb76-0db34b0cb285",
+      "title": "",
+      "fullFile": "cypress/e2e/cards/card.cy.js",
+      "file": "cypress/e2e/cards/card.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6171dd60-8efd-4d77-8fe3-01ac6375b729",
+          "title": "Cards",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test that user is able to navigate to the cards page",
+              "fullTitle": "Cards Test that user is able to navigate to the cards page",
+              "timedOut": null,
+              "duration": 21093,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.login(cardHolder.email, cardHolder.password);\ncy.get('.onboarding-title').contains('Welcome');\ncy.get('.start').contains('Not interested').click();\ncy.get('.title').contains('Amayindi').should('be.visible');\ncardsPage.accessCardsPage();",
+              "err": {},
+              "uuid": "fb704c3f-bb23-4f19-98b2-086b9a5d2f5e",
+              "parentUUID": "6171dd60-8efd-4d77-8fe3-01ac6375b729",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test that the user is able to view virtual cards",
+              "fullTitle": "Cards Test that the user is able to view virtual cards",
+              "timedOut": null,
+              "duration": 22745,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.login(email, password);\ncy.get('.onboarding-title').contains('Welcome');\ncy.get('.start').contains('Not interested').click();\ncy.get('.title').contains('Amayindi').should('be.visible');\ncardsPage.viewVirtualCards();",
+              "err": {},
+              "uuid": "43b62dcb-fdd2-485e-ac65-06dac6a8daea",
+              "parentUUID": "6171dd60-8efd-4d77-8fe3-01ac6375b729",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "fb704c3f-bb23-4f19-98b2-086b9a5d2f5e",
+            "43b62dcb-fdd2-485e-ac65-06dac6a8daea"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 43838,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/.jsons",
+        "charts": true,
+        "reportPageTitle": "My Test Suite",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

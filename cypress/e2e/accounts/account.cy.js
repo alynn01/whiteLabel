@@ -5,17 +5,16 @@ const loginPage = new LoginPage();
 const accountsPage = new AccountPage();
 const cardHolder = getCardHolder();
 
-describe('Account', () => {
+describe("Account", () => {
+  beforeEach(() => {
+    loginPage.accessLoginModal();
+  });
 
-    beforeEach(() => {
-      loginPage.accessLoginModal();
-    });
-
-    it('Test that user is able to navigate to the accounts page', () => {
-        loginPage.login(cardHolder.email, cardHolder.password);
-        cy.get('.onboarding-title').contains('Welcome');
-        cy.get('.start').contains('Not interested').click();
-        cy.get('.title').contains('Damilare').should('be.visible');
-        accountsPage.accessAccountsPage()
-    })
-})
+  it("Test that user is able to navigate to the accounts page", () => {
+    loginPage.login(cardHolder.email, cardHolder.password);
+    cy.get(".onboarding-title").contains("Welcome");
+    cy.get(".start").contains("Not interested").click();
+    cy.get(".title").contains("Amayindi").should("be.visible");
+    accountsPage.accessAccountsPage();
+  });
+});

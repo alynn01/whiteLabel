@@ -1,0 +1,130 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 0,
+    "passes": 0,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-03-28T16:42:23.587Z",
+    "end": "2023-03-28T16:46:43.134Z",
+    "duration": 259547,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 1,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "d468e536-b776-4d82-82c9-7f241fcab40b",
+      "title": "",
+      "fullFile": "cypress/e2e/cards/loadCard.cy.js",
+      "file": "cypress/e2e/cards/loadCard.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7ccce877-fb36-4880-a028-eb117c119d28",
+          "title": "Load Card",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test that the user is able to access load physical card",
+              "fullTitle": "Load Card Test that the user is able to access load physical card",
+              "timedOut": null,
+              "duration": 120979,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.login(cardHolder.email, cardHolder.password);\ncy.get('.onboarding-title').contains('Welcome');\ncy.get('.start').contains('Not interested').click();\ncy.get('.title').contains('Amayindi').should('be.visible');\ncardsPage.accessCardsPage();\nloadCardPage.accessLoadCardPage();\nloadCardPage.loadPhysicalCard();",
+              "err": {},
+              "uuid": "5450627b-227b-47aa-9c0b-fc52829f6b65",
+              "parentUUID": "7ccce877-fb36-4880-a028-eb117c119d28",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test that the user is able to access load virtual card",
+              "fullTitle": "Load Card Test that the user is able to access load virtual card",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.login(cardHolder.email, cardHolder.password);\ncy.get('.onboarding-title').contains('Welcome');\ncy.get('.start').contains('Not interested').click();\ncy.get('.title').contains('Amayindi').should('be.visible');\ncardsPage.accessCardsPage();\nloadCardPage.loadVirtualCard();",
+              "err": {},
+              "uuid": "1df4642e-e2d4-4883-9b96-8d85d0952c27",
+              "parentUUID": "7ccce877-fb36-4880-a028-eb117c119d28",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "5450627b-227b-47aa-9c0b-fc52829f6b65"
+          ],
+          "pending": [],
+          "skipped": [
+            "1df4642e-e2d4-4883-9b96-8d85d0952c27"
+          ],
+          "duration": 120979,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/.jsons",
+        "charts": true,
+        "reportPageTitle": "My Test Suite",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

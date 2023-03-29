@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="19.874" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2023-03-28T16:41:45" tests="0" file="cypress/e2e/cards/cardToCardTransfer.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Card to card transfer" timestamp="2023-03-28T16:41:45" tests="1" time="19.859" failures="0">
+    <testcase name="Card to card transfer Test that the user is able to access card to card transfer" time="19.843" classname="Test that the user is able to access card to card transfer">
+    </testcase>
+  </testsuite>
+</testsuites>

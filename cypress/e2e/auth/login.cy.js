@@ -39,7 +39,7 @@ describe('Login Test', () => {
     loginPage.login(cardHolder.email, cardHolder.password);
     cy.get('.onboarding-title').contains('Welcome');
     cy.get('.start').contains('Not interested').click();
-    cy.get('.title').contains('Damilare').should('be.visible');
+    cy.get('.title').contains('Amayindi').should('be.visible');
     
   })
 })

@@ -5,7 +5,7 @@ export class FundUserPage{
     popupHeader = () => cy.get('.modal-header-content > span').contains('Fund user accounts')
     programDropdown = () => cy.get('.jhLczD > .sc-jrcTuL > .sc-kDvujY > .control-value');
     selectProgram = () => cy.get('.sc-csuSiG > :nth-child(2)');
-    enterAmount = () => cy.get(':nth-child(4) > .sc-khsqcC > div > .sc-hTBuwn');
+    enterAmount = () => cy.get(`input[name="amount"]`);
     fundProgramButton = () => cy.get('.button-text').contains('Fund program');
     selectAcctNumber = () => cy.get('.cwyUru > .sc-jrcTuL > .sc-kDvujY > .control-value');
     pickAccount = () => cy.get('.sc-csuSiG > :nth-child(3)');

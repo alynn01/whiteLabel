@@ -1,0 +1,114 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-03-29T14:49:32.664Z",
+    "end": "2023-03-29T14:53:43.499Z",
+    "duration": 250835,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3dfb9e58-87a0-4097-b657-05a47030b7fb",
+      "title": "",
+      "fullFile": "cypress/e2e/wallet/fundProgram.cy.js",
+      "file": "cypress/e2e/wallet/fundProgram.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "28cf5ad8-b684-47f6-bb9b-d4ad894dfe32",
+          "title": "Fund Program",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test that user is able to navigate to fund program popup",
+              "fullTitle": "Fund Program Test that user is able to navigate to fund program popup",
+              "timedOut": null,
+              "duration": 81469,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/wallet/fundProgram.cy.js/Fund Program -- Test that user is able to navigate to fund program popup (failed).png\"\n      }\n    ],\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/wallet/fundProgram.cy.js/Fund Program -- Test that user is able to navigate to fund program popup (failed) (attempt 2).png\"\n      }\n    ],\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/wallet/fundProgram.cy.js/Fund Program -- Test that user is able to navigate to fund program popup -- before each hook (failed) (attempt 3).png\"\n      }\n    ]\n  ]\n}",
+              "code": "fundProgram.accessFundProgramPage();\nfundProgram.enterFundDetails();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 80000ms: Expected to find element: `.sc-hhOBVt > div`, but never found it.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Fund Program`",
+                "estack": "AssertionError: Timed out retrying after 80000ms: Expected to find element: `.sc-hhOBVt > div`, but never found it.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Fund Program`\n    at CreateUserPage.eval [as welcomeMessage] (webpack:///./cypress/support/pages/accounts/createUser-page.js:5:28)\n    at CreateUserPage.accessPOPortal (webpack:///./cypress/support/pages/accounts/createUser-page.js:35:9)\n    at Context.eval (webpack:///./cypress/e2e/wallet/fundProgram.cy.js:12:18)",
+                "diff": null
+              },
+              "uuid": "15a49604-356a-42a3-9649-8f594f87ed02",
+              "parentUUID": "28cf5ad8-b684-47f6-bb9b-d4ad894dfe32",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "15a49604-356a-42a3-9649-8f594f87ed02"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 81469,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/.jsons",
+        "charts": true,
+        "reportPageTitle": "My Test Suite",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

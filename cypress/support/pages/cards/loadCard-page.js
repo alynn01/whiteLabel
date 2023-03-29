@@ -9,7 +9,7 @@ export class LoadCardPage {
       '[style="z-index: 11;"] > .dropdown-list > .dropdown > app-dropdown-icon > #dropdownchild'
     );
   accountDropdownItem = () =>
-    cy.get(`[id='dropdownchild']`).contains(" USD - 6122256485 ");
+    cy.get(`[id='dropdownchild']`).contains(" USD - 5221323472 ");
   cardDropdown = () =>
     cy.get(
       '[style="z-index: 8;"] > .dropdown-list > .dropdown > app-dropdown-icon > #dropdownchild'

@@ -6,7 +6,7 @@ const cardsPage = new CardsPage();
 const activatePhysicalCard = new ActivatePhysicalCardPage();
 const cardHolder = getCardHolder();
 
-describe('Card to card transfer', () => {
+describe('Activate Physical Card', () => {
 
     beforeEach(() => {
       loginPage.accessLoginModal();
@@ -16,7 +16,7 @@ describe('Card to card transfer', () => {
         loginPage.login(cardHolder.email, cardHolder.password);
         cy.get('.onboarding-title').contains('Welcome');
         cy.get('.start').contains('Not interested').click();
-        cy.get('.title').contains('Damilare').should('be.visible');
+        cy.get('.title').contains('Amayindi').should('be.visible');
         cardsPage.accessCardsPage();
         activatePhysicalCard.enterCardActivationDetails();
         

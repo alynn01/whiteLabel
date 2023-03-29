@@ -1,0 +1,114 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-03-27T14:36:56.192Z",
+    "end": "2023-03-27T14:41:31.863Z",
+    "duration": 275671,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "194a7ddc-762f-4a68-9ed1-5c8adf097512",
+      "title": "",
+      "fullFile": "cypress/e2e/accounts/createUser.cy.js",
+      "file": "cypress/e2e/accounts/createUser.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4593e4b6-49b2-4a8b-bae7-ce01b3d528ac",
+          "title": "Create User",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test that user is able to invite a new user to the organization",
+              "fullTitle": "Create User Test that user is able to invite a new user to the organization",
+              "timedOut": null,
+              "duration": 81453,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/accounts/createUser.cy.js/Create User -- Test that user is able to invite a new user to the organization (failed).png\"\n      }\n    ],\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/accounts/createUser.cy.js/Create User -- Test that user is able to invite a new user to the organization (failed) (attempt 2).png\"\n      }\n    ],\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/accounts/createUser.cy.js/Create User -- Test that user is able to invite a new user to the organization -- before each hook (failed) (attempt 3).png\"\n      }\n    ]\n  ]\n}",
+              "code": "newUserPage.accessEndUserPage();\nnewUserPage.createEndUser();\nnewUserPage.enterDetails();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 80000ms: Expected to find element: `.sc-hhOBVt > div`, but never found it.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Create User`",
+                "estack": "AssertionError: Timed out retrying after 80000ms: Expected to find element: `.sc-hhOBVt > div`, but never found it.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Create User`\n    at CreateUserPage.eval [as welcomeMessage] (webpack:///./cypress/support/pages/accounts/createUser-page.js:5:28)\n    at CreateUserPage.accessPOPortal (webpack:///./cypress/support/pages/accounts/createUser-page.js:35:9)\n    at Context.eval (webpack:///./cypress/e2e/accounts/createUser.cy.js:11:18)",
+                "diff": null
+              },
+              "uuid": "f1a33430-b2ad-441a-984e-114f37394c14",
+              "parentUUID": "4593e4b6-49b2-4a8b-bae7-ce01b3d528ac",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "f1a33430-b2ad-441a-984e-114f37394c14"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 81453,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/.jsons",
+        "charts": true,
+        "reportPageTitle": "My Test Suite",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

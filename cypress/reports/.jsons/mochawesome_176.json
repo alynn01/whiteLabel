@@ -1,0 +1,133 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-03-28T16:46:44.053Z",
+    "end": "2023-03-28T16:55:42.190Z",
+    "duration": 538137,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e04a0cc4-22c5-4913-8cff-2b8f00564095",
+      "title": "",
+      "fullFile": "cypress/e2e/cards/withdrawFromCard.cy.js",
+      "file": "cypress/e2e/cards/withdrawFromCard.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "88c1422b-0f63-40dc-868c-1ae61619bd71",
+          "title": "Withdraw from card",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test that the user is able to access withdraw from physical card",
+              "fullTitle": "Withdraw from card Test that the user is able to access withdraw from physical card",
+              "timedOut": null,
+              "duration": 111177,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/cards/withdrawFromCard.cy.js/Withdraw from card -- Test that the user is able to access withdraw from physical card (failed).png\"\n      }\n    ],\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/cards/withdrawFromCard.cy.js/Withdraw from card -- Test that the user is able to access withdraw from physical card (failed) (attempt 2).png\"\n      }\n    ],\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/cards/withdrawFromCard.cy.js/Withdraw from card -- Test that the user is able to access withdraw from physical card (failed) (attempt 3).png\"\n      }\n    ]\n  ]\n}",
+              "code": "loginPage.login(cardHolder.email, cardHolder.password);\ncy.get('.onboarding-title').contains('Welcome');\ncy.get('.start').contains('Not interested').click();\ncy.get('.title').contains('Damilare').should('be.visible');\ncardsPage.accessCardsPage();\nwithdrawalPage.accessWithdrawFromCardPage();\nwithdrawalPage.enterWithdrawalDetails();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 80000ms: Expected to find content: 'Damilare' within the element: <h1.title> but never did.",
+                "estack": "AssertionError: Timed out retrying after 80000ms: Expected to find content: 'Damilare' within the element: <h1.title> but never did.\n    at Context.eval (webpack:///./cypress/e2e/cards/withdrawFromCard.cy.js:19:46)",
+                "diff": null
+              },
+              "uuid": "9fb3de9c-770c-4e7d-89a6-1fa8eddc7267",
+              "parentUUID": "88c1422b-0f63-40dc-868c-1ae61619bd71",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test that the user is able to access withdraw from virtual card",
+              "fullTitle": "Withdraw from card Test that the user is able to access withdraw from virtual card",
+              "timedOut": null,
+              "duration": 97080,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.login(cardHolder.email, cardHolder.password);\ncy.get('.onboarding-title').contains('Welcome');\ncy.get('.start').contains('Not interested').click();\ncy.get('.title').contains('Damilare').should('be.visible');\ncardsPage.accessCardsPage();\nwithdrawalPage.withdrawFromVirtualCard();",
+              "err": {},
+              "uuid": "c8cf6a12-f956-4832-b0b8-89c2ce734a28",
+              "parentUUID": "88c1422b-0f63-40dc-868c-1ae61619bd71",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "9fb3de9c-770c-4e7d-89a6-1fa8eddc7267",
+            "c8cf6a12-f956-4832-b0b8-89c2ce734a28"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 208257,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/.jsons",
+        "charts": true,
+        "reportPageTitle": "My Test Suite",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

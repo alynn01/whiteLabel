@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="26.464" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2023-03-29T19:06:25" tests="0" file="cypress/e2e/cards/activatePhysicalCard.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Activate Physical Card" timestamp="2023-03-29T19:06:25" tests="1" time="26.449" failures="0">
+    <testcase name="Activate Physical Card Test that the user is able to activate physical card" time="26.433" classname="Test that the user is able to activate physical card">
+    </testcase>
+  </testsuite>
+</testsuites>

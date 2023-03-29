@@ -1,0 +1,114 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-03-29T14:53:44.416Z",
+    "end": "2023-03-29T14:58:08.149Z",
+    "duration": 263733,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b41ab518-7a1f-489f-a04d-3f9360d572f0",
+      "title": "",
+      "fullFile": "cypress/e2e/wallet/fundUser.cy.js",
+      "file": "cypress/e2e/wallet/fundUser.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "111bdb34-ba70-4256-8cd3-3a5ea7c3c415",
+          "title": "Fund User",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test that user is able to navigate to fund user popup",
+              "fullTitle": "Fund User Test that user is able to navigate to fund user popup",
+              "timedOut": null,
+              "duration": 82701,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/wallet/fundUser.cy.js/Fund User -- Test that user is able to navigate to fund user popup (failed).png\"\n      }\n    ],\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/wallet/fundUser.cy.js/Fund User -- Test that user is able to navigate to fund user popup (failed) (attempt 2).png\"\n      }\n    ],\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/wallet/fundUser.cy.js/Fund User -- Test that user is able to navigate to fund user popup -- before each hook (failed) (attempt 3).png\"\n      }\n    ]\n  ]\n}",
+              "code": "fundUser.accessFundUserPopup();\nfundUser.enterFundDetails();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 80000ms: Expected to find element: `.sc-hhOBVt > div`, but never found it.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Fund User`",
+                "estack": "AssertionError: Timed out retrying after 80000ms: Expected to find element: `.sc-hhOBVt > div`, but never found it.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Fund User`\n    at CreateUserPage.eval [as welcomeMessage] (webpack:///./cypress/support/pages/accounts/createUser-page.js:5:28)\n    at CreateUserPage.accessPOPortal (webpack:///./cypress/support/pages/accounts/createUser-page.js:35:9)\n    at Context.eval (webpack:///./cypress/e2e/wallet/fundUser.cy.js:12:18)",
+                "diff": null
+              },
+              "uuid": "db4e1171-cf5e-480d-809e-b4de47841937",
+              "parentUUID": "111bdb34-ba70-4256-8cd3-3a5ea7c3c415",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "db4e1171-cf5e-480d-809e-b4de47841937"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 82701,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/.jsons",
+        "charts": true,
+        "reportPageTitle": "My Test Suite",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
