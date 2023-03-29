@@ -2,7 +2,7 @@ export class CreateUserPage {
   emailField = () => cy.get('input[name="email"]');
   passwordField = () => cy.get('input[name="password"]');
   loginButton = () => cy.get(`[class*="button-text"]`).contains("Sign in");
-  welcomeMessage = () => cy.get(".sc-hhOBVt > div").contains("Welcome back, ");
+  welcomeMessage = () => cy.contains("Welcome back, ");
   endUserMenuItem = () =>
     cy.get('[href="/dashboard/users"] > span').contains("End users");
   createUserDropdown = () =>
@@ -24,7 +24,7 @@ export class CreateUserPage {
   selectProgram = () =>
     cy.get(".cwyUru > .sc-jrcTuL > .sc-kDvujY > .placeholder");
   chooseProgram = () =>
-    cy.get(".sc-csuSiG > :nth-child(6)").contains("Ama Test");
+  cy.get('.sc-csuSiG > :nth-child(1)').contains("Auto Ama");
   createUserButton = () => cy.get(".button-text").contains("Create user");
 
   accessPOPortal(email, password, url) {

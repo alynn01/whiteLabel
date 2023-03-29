@@ -14,14 +14,14 @@ export const role = {
   export const stagingUsers = [
     {
       role: role.programOwner,
-      email: "pomsia01@yopmail.com",
-      password: "Test@123",
+      email: "amatest@yopmail.com",
+      password: "P@$sw0rd",
       urlPath: "https://devcompanyadmin.essolo.com/",
     },
     {
       role: role.cardHolder,
-      email: "damiuser001@yopmail.com",
-      password: "Password@1",
+      email: "autouser@qa.team",
+      password: "P@$sw0rd",
     },
     
     {

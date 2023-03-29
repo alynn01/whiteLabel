@@ -1,7 +1,7 @@
 export class CardsPage{
  cardMenuItem = () => cy.get('.app-onboarding-menu-cards > .nav-icon').contains('Cards');
  cardPageMessage = () => cy.get('.sub-title').contains('View all activites on your cards/wallet');
- cardNumber = () => cy.get('.cardNumber').contains(8852)
+ cardNumber = () => cy.get('.default-page_text').contains("No USD physical cards added")
  toggleButton = () => cy.get('toggle-icon > .toggle-wrapper');
  viewCardDetailsButton = () => cy.get("div[id='1'] div[class='card-detail-wrapper']").contains('View card details');
  cardEmailAddress = () => cy.get('#email > #wallet > .cardRow > .wallets_single').contains('via email')

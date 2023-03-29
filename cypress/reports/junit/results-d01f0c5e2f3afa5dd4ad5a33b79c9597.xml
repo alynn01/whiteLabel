@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="538.137" tests="2" failures="1">
+  <testsuite name="Root Suite" timestamp="2023-03-28T16:46:44" tests="0" file="cypress/e2e/cards/withdrawFromCard.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Withdraw from card" timestamp="2023-03-28T16:46:44" tests="2" time="0.000" failures="1">
+    <testcase name="Withdraw from card Test that the user is able to access withdraw from physical card" time="100.607" classname="Test that the user is able to access withdraw from physical card">
+      <failure message="Timed out retrying after 80000ms: Expected to find content: &apos;Damilare&apos; within the element: &lt;h1.title&gt; but never did." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 80000ms: Expected to find content: 'Damilare' within the element: <h1.title> but never did.
+    at Context.eval (webpack:///./cypress/e2e/cards/withdrawFromCard.cy.js:19:46)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

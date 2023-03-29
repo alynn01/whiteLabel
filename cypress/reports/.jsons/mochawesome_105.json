@@ -1,0 +1,137 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2023-03-26T21:09:35.343Z",
+    "end": "2023-03-26T21:17:12.156Z",
+    "duration": 456813,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "be5806e3-3c88-4d13-833e-d911ab6ff979",
+      "title": "",
+      "fullFile": "cypress/e2e/cards/card.cy.js",
+      "file": "cypress/e2e/cards/card.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "dd9b597d-417b-4838-8b1a-0beaeff29354",
+          "title": "Cards",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test that user is able to navigate to the cards page",
+              "fullTitle": "Cards Test that user is able to navigate to the cards page",
+              "timedOut": null,
+              "duration": 126581,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/cards/card.cy.js/Cards -- Test that user is able to navigate to the cards page (failed).png\"\n      }\n    ],\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/cards/card.cy.js/Cards -- Test that user is able to navigate to the cards page (failed) (attempt 2).png\"\n      }\n    ],\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/cards/card.cy.js/Cards -- Test that user is able to navigate to the cards page (failed) (attempt 3).png\"\n      }\n    ]\n  ]\n}",
+              "code": "loginPage.login(cardHolder.email, cardHolder.password);\ncy.get('.onboarding-title').contains('Welcome');\ncy.get('.start').contains('Not interested').click();\ncy.get('.title').contains('Amayindi').should('be.visible');\ncardsPage.accessCardsPage();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 80000ms: Expected to find element: `.onboarding-title`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 80000ms: Expected to find element: `.onboarding-title`, but never found it.\n    at Context.eval (webpack:///./cypress/e2e/cards/card.cy.js:18:11)",
+                "diff": null
+              },
+              "uuid": "772e6a6d-3921-47e1-a9f5-83250e10fd3d",
+              "parentUUID": "dd9b597d-417b-4838-8b1a-0beaeff29354",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test that the user is able to view virtual cards",
+              "fullTitle": "Cards Test that the user is able to view virtual cards",
+              "timedOut": null,
+              "duration": 115945,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/cards/card.cy.js/Cards -- Test that the user is able to view virtual cards (failed).png\"\n      }\n    ],\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/cards/card.cy.js/Cards -- Test that the user is able to view virtual cards (failed) (attempt 2).png\"\n      }\n    ],\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/cards/card.cy.js/Cards -- Test that the user is able to view virtual cards (failed) (attempt 3).png\"\n      }\n    ]\n  ]\n}",
+              "code": "loginPage.login(email, password);\ncy.get('.onboarding-title').contains('Welcome');\ncy.get('.start').contains('Not interested').click();\ncy.get('.title').contains('Amayindi').should('be.visible');\ncardsPage.viewVirtualCards();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 80000ms: Expected to find element: `.onboarding-title`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 80000ms: Expected to find element: `.onboarding-title`, but never found it.\n    at Context.eval (webpack:///./cypress/e2e/cards/card.cy.js:26:11)",
+                "diff": null
+              },
+              "uuid": "7c00bbf1-bedf-4da4-968b-e3987cc40ae0",
+              "parentUUID": "dd9b597d-417b-4838-8b1a-0beaeff29354",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "772e6a6d-3921-47e1-a9f5-83250e10fd3d",
+            "7c00bbf1-bedf-4da4-968b-e3987cc40ae0"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 242526,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/.jsons",
+        "charts": true,
+        "reportPageTitle": "My Test Suite",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

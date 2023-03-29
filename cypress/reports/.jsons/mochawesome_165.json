@@ -1,0 +1,129 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-03-27T15:15:41.444Z",
+    "end": "2023-03-27T15:16:50.185Z",
+    "duration": 68741,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f0464fb1-5221-4e39-8b61-4ea23a90c27e",
+      "title": "",
+      "fullFile": "cypress/e2e/transactions/transaction.cy.js",
+      "file": "cypress/e2e/transactions/transaction.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "46f29a9d-0a5a-4c06-80aa-705f1d72238b",
+          "title": "Transactions",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test that user is able to navigate to the transactions page",
+              "fullTitle": "Transactions Test that user is able to navigate to the transactions page",
+              "timedOut": null,
+              "duration": 29507,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.login(cardHolder.email, cardHolder.password);\ncy.get('.onboarding-title').contains('Welcome');\ncy.get('.start').contains('Not interested').click();\ncy.get('.title').contains('Amayindi').should('be.visible');\ntransactionPage.accessTransactionPage();",
+              "err": {},
+              "uuid": "71fd0c79-1cc1-4bb2-af70-ba8e1dd10ceb",
+              "parentUUID": "46f29a9d-0a5a-4c06-80aa-705f1d72238b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test that user is able to navigate to the transactions details page",
+              "fullTitle": "Transactions Test that user is able to navigate to the transactions details page",
+              "timedOut": null,
+              "duration": 39198,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.login(cardHolder.email, cardHolder.password);\ncy.get('.onboarding-title').contains('Welcome');\ncy.get('.start').contains('Not interested').click();\ncy.get('.title').contains('Amayindi').should('be.visible');\ntransactionPage.accessTransactionPage();\ntransactionPage.accessTransactionDetails();\ncy.get('.pdfButton > .formButton').contains('Download receipt').should('be.visible');",
+              "err": {},
+              "uuid": "b2b02c0a-313b-4ab3-b0d4-36eac8821d88",
+              "parentUUID": "46f29a9d-0a5a-4c06-80aa-705f1d72238b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "71fd0c79-1cc1-4bb2-af70-ba8e1dd10ceb",
+            "b2b02c0a-313b-4ab3-b0d4-36eac8821d88"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 68705,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/.jsons",
+        "charts": true,
+        "reportPageTitle": "My Test Suite",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

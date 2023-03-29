@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-03-23T07:40:36.520Z",
+    "end": "2023-03-23T07:40:49.595Z",
+    "duration": 13075,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "bdc13b23-01a2-4e9c-ae13-e66ecfbf3baf",
+      "title": "",
+      "fullFile": "cypress/e2e/cards/createVirtualCard.cy.js",
+      "file": "cypress/e2e/cards/createVirtualCard.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5d767deb-62ce-4a28-869e-ab857e5f5eba",
+          "title": "Card to card transfer",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test that the user is able to access activate virtual card",
+              "fullTitle": "Card to card transfer Test that the user is able to access activate virtual card",
+              "timedOut": null,
+              "duration": 13050,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.login(email, password);\ncy.get('.onboarding-title').contains('Welcome');\ncy.get('.start').contains('Not interested').click();\ncy.get('.title').contains('Amayindi').should('be.visible');\n//cardsPage.accessCardsPage();\ncreateVirtualCard.createCard();",
+              "err": {},
+              "uuid": "77fd4ffe-7bf3-49f5-98b4-2d1e6461655e",
+              "parentUUID": "5d767deb-62ce-4a28-869e-ab857e5f5eba",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "77fd4ffe-7bf3-49f5-98b4-2d1e6461655e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 13050,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/.jsons",
+        "charts": true,
+        "reportPageTitle": "My Test Suite",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

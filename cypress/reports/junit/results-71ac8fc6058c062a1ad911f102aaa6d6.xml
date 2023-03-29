@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="424.461" tests="6" failures="1">
+  <testsuite name="Root Suite" timestamp="2023-03-28T16:32:38" tests="0" file="cypress/e2e/auth/login.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Login Test" timestamp="2023-03-28T16:32:38" tests="6" time="424.446" failures="1">
+    <testcase name="Login Test Test that user is unable to login with wrong email but correct password" time="50.228" classname="Test that user is unable to login with wrong email but correct password">
+    </testcase>
+    <testcase name="Login Test Test that user is unable to login with correct email but wrong password" time="14.712" classname="Test that user is unable to login with correct email but wrong password">
+    </testcase>
+    <testcase name="Login Test Test that user is unable to login without email but correct password" time="13.835" classname="Test that user is unable to login without email but correct password">
+    </testcase>
+    <testcase name="Login Test Test that user is unable to login with correct email but no password" time="14.889" classname="Test that user is unable to login with correct email but no password">
+    </testcase>
+    <testcase name="Login Test Test that user is unable to login without email or password" time="13.137" classname="Test that user is unable to login without email or password">
+    </testcase>
+    <testcase name="Login Test Test that user is unable to login with valid email and password" time="60.282" classname="Test that user is unable to login with valid email and password">
+      <failure message="Timed out retrying after 80000ms: Expected to find element: `.onboarding-title`, but never found it." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 80000ms: Expected to find element: `.onboarding-title`, but never found it.
+    at Context.eval (webpack:///./cypress/e2e/auth/login.cy.js:40:7)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

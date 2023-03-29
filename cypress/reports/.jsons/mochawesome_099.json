@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-03-23T12:07:19.917Z",
+    "end": "2023-03-23T12:07:30.892Z",
+    "duration": 10975,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "fc7ab536-1350-4f9e-b4ed-5ceee4f61120",
+      "title": "",
+      "fullFile": "cypress/e2e/wallet/fundProgram.cy.js",
+      "file": "cypress/e2e/wallet/fundProgram.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7f7908a2-fd48-4472-85ae-3403e536ddaf",
+          "title": "Fund Program",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test that user is able to navigate to fund program popup",
+              "fullTitle": "Fund Program Test that user is able to navigate to fund program popup",
+              "timedOut": null,
+              "duration": 10949,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "fundProgram.accessFundProgramPage();\nfundProgram.enterFundDetails();",
+              "err": {},
+              "uuid": "2fc01f62-8072-4946-a09c-330a5a2efba6",
+              "parentUUID": "7f7908a2-fd48-4472-85ae-3403e536ddaf",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2fc01f62-8072-4946-a09c-330a5a2efba6"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10949,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/.jsons",
+        "charts": true,
+        "reportPageTitle": "My Test Suite",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-03-29T20:50:23.112Z",
+    "end": "2023-03-29T20:50:33.732Z",
+    "duration": 10620,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "cb1e07ea-0092-4b0d-a746-6743d5302585",
+      "title": "",
+      "fullFile": "cypress/e2e/program/createProgram.cy.js",
+      "file": "cypress/e2e/program/createProgram.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0e209771-4cbb-4bf7-af7a-28e34fdf7481",
+          "title": "Create Program",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test that user is able to navigate to create program popup",
+              "fullTitle": "Create Program Test that user is able to navigate to create program popup",
+              "timedOut": null,
+              "duration": 10593,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "createProgram.accessCreateProgram();\ncreateProgram.enterProgramDetails();",
+              "err": {},
+              "uuid": "9a0dc1bd-d535-49e6-a981-6c2b2e1dedcc",
+              "parentUUID": "0e209771-4cbb-4bf7-af7a-28e34fdf7481",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9a0dc1bd-d535-49e6-a981-6c2b2e1dedcc"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10593,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/.jsons",
+        "charts": true,
+        "reportPageTitle": "My Test Suite",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2023-03-27T09:47:48.614Z",
+    "end": "2023-03-27T09:57:11.893Z",
+    "duration": 563279,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "76390b02-df98-406a-ac86-e5ac9640d513",
+      "title": "",
+      "fullFile": "cypress/e2e/cards/loadCard.cy.js",
+      "file": "cypress/e2e/cards/loadCard.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "aae25491-f338-40cc-a3e3-19a353243379",
+          "title": "Load Card",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test that the user is able to access load physical card",
+              "fullTitle": "Load Card Test that the user is able to access load physical card",
+              "timedOut": null,
+              "duration": 95382,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/cards/loadCard.cy.js/Load Card -- Test that the user is able to access load physical card (failed).png\"\n      }\n    ],\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/cards/loadCard.cy.js/Load Card -- Test that the user is able to access load physical card (failed) (attempt 2).png\"\n      }\n    ],\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/cards/loadCard.cy.js/Load Card -- Test that the user is able to access load physical card (failed) (attempt 3).png\"\n      }\n    ]\n  ]\n}",
+              "code": "loginPage.login(cardHolder.email, cardHolder.password);\ncy.get('.onboarding-title').contains('Welcome');\ncy.get('.start').contains('Not interested').click();\ncy.get('.title').contains('Amayindi').should('be.visible');\ncardsPage.accessCardsPage();\nloadCardPage.accessLoadCardPage();\nloadCardPage.loadPhysicalCard();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 80000ms: Expected to find element: `.onboarding-title`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 80000ms: Expected to find element: `.onboarding-title`, but never found it.\n    at Context.eval (webpack:///./cypress/e2e/cards/loadCard.cy.js:17:11)",
+                "diff": null
+              },
+              "uuid": "a756aeed-c9ea-4716-9a14-219dafcd0763",
+              "parentUUID": "aae25491-f338-40cc-a3e3-19a353243379",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test that the user is able to access load virtual card",
+              "fullTitle": "Load Card Test that the user is able to access load virtual card",
+              "timedOut": null,
+              "duration": 92110,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/cards/loadCard.cy.js/Load Card -- Test that the user is able to access load virtual card (failed).png\"\n      }\n    ],\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/cards/loadCard.cy.js/Load Card -- Test that the user is able to access load virtual card (failed) (attempt 2).png\"\n      }\n    ],\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/cards/loadCard.cy.js/Load Card -- Test that the user is able to access load virtual card (failed) (attempt 3).png\"\n      }\n    ]\n  ]\n}",
+              "code": "loginPage.login(cardHolder.email, cardHolder.password);\ncy.get('.onboarding-title').contains('Welcome');\ncy.get('.start').contains('Not interested').click();\ncy.get('.title').contains('Amayindi').should('be.visible');\ncardsPage.accessCardsPage();\nloadCardPage.loadVirtualCard();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 80000ms: Expected to find element: `.onboarding-title`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 80000ms: Expected to find element: `.onboarding-title`, but never found it.\n    at Context.eval (webpack:///./cypress/e2e/cards/loadCard.cy.js:27:9)",
+                "diff": null
+              },
+              "uuid": "3da8cc90-0c38-4167-bce8-82f51e8d7fb5",
+              "parentUUID": "aae25491-f338-40cc-a3e3-19a353243379",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "a756aeed-c9ea-4716-9a14-219dafcd0763",
+            "3da8cc90-0c38-4167-bce8-82f51e8d7fb5"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 187492,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/.jsons",
+        "charts": true,
+        "reportPageTitle": "My Test Suite",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

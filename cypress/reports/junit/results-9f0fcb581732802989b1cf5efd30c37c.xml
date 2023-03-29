@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="456.813" tests="2" failures="2">
+  <testsuite name="Root Suite" timestamp="2023-03-26T21:09:35" tests="0" file="cypress/e2e/cards/card.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Cards" timestamp="2023-03-26T21:09:35" tests="2" time="456.805" failures="2">
+    <testcase name="Cards Test that user is able to navigate to the cards page" time="29.355" classname="Test that user is able to navigate to the cards page">
+      <failure message="Timed out retrying after 80000ms: Expected to find element: `.onboarding-title`, but never found it." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 80000ms: Expected to find element: `.onboarding-title`, but never found it.
+    at Context.eval (webpack:///./cypress/e2e/cards/card.cy.js:18:11)]]></failure>
+    </testcase>
+    <testcase name="Cards Test that the user is able to view virtual cards" time="123.472" classname="Test that the user is able to view virtual cards">
+      <failure message="Timed out retrying after 80000ms: Expected to find element: `.onboarding-title`, but never found it." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 80000ms: Expected to find element: `.onboarding-title`, but never found it.
+    at Context.eval (webpack:///./cypress/e2e/cards/card.cy.js:26:11)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

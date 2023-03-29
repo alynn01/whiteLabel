@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="11.535" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2023-03-23T07:42:42" tests="0" file="cypress/e2e/program/createProgram.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Create Program" timestamp="2023-03-23T07:42:42" tests="1" time="11.509" failures="0">
+    <testcase name="Create Program Test that user is able to navigate to create program popup" time="11.490" classname="Test that user is able to navigate to create program popup">
+    </testcase>
+  </testsuite>
+</testsuites>

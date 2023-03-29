@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-03-23T07:42:54.762Z",
+    "end": "2023-03-23T07:43:07.501Z",
+    "duration": 12739,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c415eaa5-8daa-4919-be52-e923f5f70772",
+      "title": "",
+      "fullFile": "cypress/e2e/settings/changeLanguage.cy.js",
+      "file": "cypress/e2e/settings/changeLanguage.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c9fa1861-3d51-4d0e-af32-0f9b23b8c8f6",
+          "title": "Settings",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test that user is able to navigate to the change language page",
+              "fullTitle": "Settings Test that user is able to navigate to the change language page",
+              "timedOut": null,
+              "duration": 12718,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.login(cardHolder.email, cardHolder.password);\ncy.get('.onboarding-title').contains('Welcome');\ncy.get('.start').contains('Not interested').click();\ncy.get('.title').contains('Damilare').should('be.visible');\nsettingsPage.accessPage();\nsettingsPage.changeLanguage();",
+              "err": {},
+              "uuid": "8e51934a-5164-48d0-a622-8767db703ef4",
+              "parentUUID": "c9fa1861-3d51-4d0e-af32-0f9b23b8c8f6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8e51934a-5164-48d0-a622-8767db703ef4"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 12718,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/.jsons",
+        "charts": true,
+        "reportPageTitle": "My Test Suite",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

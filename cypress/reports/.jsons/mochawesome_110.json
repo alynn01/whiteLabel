@@ -1,0 +1,210 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 5,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-03-27T09:22:08.913Z",
+    "end": "2023-03-27T09:28:04.724Z",
+    "duration": 355811,
+    "testsRegistered": 6,
+    "passPercent": 83.33333333333334,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ff4c5d4c-2eb9-4b04-9dea-2d06c84a6bb6",
+      "title": "",
+      "fullFile": "cypress/e2e/auth/login.cy.js",
+      "file": "cypress/e2e/auth/login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2710d3c6-8e2b-47b3-bd9d-a40a3e1dc269",
+          "title": "Login Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test that user is unable to login with wrong email but correct password",
+              "fullTitle": "Login Test Test that user is unable to login with wrong email but correct password",
+              "timedOut": null,
+              "duration": 15966,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.login('damiuser001@yopmail', cardHolder.password);\ncy.get('.portal-container_header > :nth-child(2)').contains('Gain access. Change your life.').should('be.visible');",
+              "err": {},
+              "uuid": "bddc56e4-20f9-430a-a23d-8b260218978a",
+              "parentUUID": "2710d3c6-8e2b-47b3-bd9d-a40a3e1dc269",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test that user is unable to login with correct email but wrong password",
+              "fullTitle": "Login Test Test that user is unable to login with correct email but wrong password",
+              "timedOut": null,
+              "duration": 15124,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.login(cardHolder.email, 'Password');\ncy.get('.portal-container_header > :nth-child(2)').contains('Gain access. Change your life.').should('be.visible');",
+              "err": {},
+              "uuid": "2916a61d-f35e-4aa9-9601-9c04a0e3b59d",
+              "parentUUID": "2710d3c6-8e2b-47b3-bd9d-a40a3e1dc269",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test that user is unable to login without email but correct password",
+              "fullTitle": "Login Test Test that user is unable to login without email but correct password",
+              "timedOut": null,
+              "duration": 16337,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(':nth-child(2) > .column > form-input-large > .formInputWrapper').type(cardHolder.password);\ncy.get('.portal-container_header > :nth-child(2)').contains('Gain access. Change your life.').should('be.visible');",
+              "err": {},
+              "uuid": "bce436ad-d6ab-43f7-bb85-0b1e945aba39",
+              "parentUUID": "2710d3c6-8e2b-47b3-bd9d-a40a3e1dc269",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test that user is unable to login with correct email but no password",
+              "fullTitle": "Login Test Test that user is unable to login with correct email but no password",
+              "timedOut": null,
+              "duration": 15609,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(':nth-child(1) > .column > form-input-large > .formInputWrapper').type(cardHolder.email);\ncy.get('.portal-container_header > :nth-child(2)').contains('Gain access. Change your life.').should('be.visible');",
+              "err": {},
+              "uuid": "b55fb129-7b14-49e3-8052-30b1089a0f69",
+              "parentUUID": "2710d3c6-8e2b-47b3-bd9d-a40a3e1dc269",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test that user is unable to login without email or password",
+              "fullTitle": "Login Test Test that user is unable to login without email or password",
+              "timedOut": null,
+              "duration": 11278,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.form-button').contains('Login').click();\ncy.get('.portal-container_header > :nth-child(2)').contains('Gain access. Change your life.').should('be.visible');",
+              "err": {},
+              "uuid": "0183dd65-ac63-4e06-9a03-f746b9bfe9f4",
+              "parentUUID": "2710d3c6-8e2b-47b3-bd9d-a40a3e1dc269",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test that user is unable to login with valid email and password",
+              "fullTitle": "Login Test Test that user is unable to login with valid email and password",
+              "timedOut": null,
+              "duration": 96703,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/auth/login.cy.js/Login Test -- Test that user is unable to login with valid email and password (failed).png\"\n      }\n    ],\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/auth/login.cy.js/Login Test -- Test that user is unable to login with valid email and password (failed) (attempt 2).png\"\n      }\n    ],\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/auth/login.cy.js/Login Test -- Test that user is unable to login with valid email and password (failed) (attempt 3).png\"\n      }\n    ]\n  ]\n}",
+              "code": "loginPage.login(cardHolder.email, cardHolder.password);\ncy.get('.onboarding-title').contains('Welcome');\ncy.get('.start').contains('Not interested').click();\ncy.get('.title').contains('Amayindi').should('be.visible');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 80000ms: Expected to find element: `.onboarding-title`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 80000ms: Expected to find element: `.onboarding-title`, but never found it.\n    at Context.eval (webpack:///./cypress/e2e/auth/login.cy.js:40:7)",
+                "diff": null
+              },
+              "uuid": "ca2f24ba-3e84-4890-b80b-519b6239995a",
+              "parentUUID": "2710d3c6-8e2b-47b3-bd9d-a40a3e1dc269",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "bddc56e4-20f9-430a-a23d-8b260218978a",
+            "2916a61d-f35e-4aa9-9601-9c04a0e3b59d",
+            "bce436ad-d6ab-43f7-bb85-0b1e945aba39",
+            "b55fb129-7b14-49e3-8052-30b1089a0f69",
+            "0183dd65-ac63-4e06-9a03-f746b9bfe9f4"
+          ],
+          "failures": [
+            "ca2f24ba-3e84-4890-b80b-519b6239995a"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 171017,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/.jsons",
+        "charts": true,
+        "reportPageTitle": "My Test Suite",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

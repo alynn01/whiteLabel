@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-03-23T07:37:41.184Z",
+    "end": "2023-03-23T07:37:52.363Z",
+    "duration": 11179,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b5a1fad4-ebe3-4a69-b752-396fc0a8fa23",
+      "title": "",
+      "fullFile": "cypress/e2e/accounts/createUser.cy.js",
+      "file": "cypress/e2e/accounts/createUser.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "90ed1356-7940-4d9b-abfd-12dcffbda91b",
+          "title": "Create User",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test that user is able to invite a new user to the organization",
+              "fullTitle": "Create User Test that user is able to invite a new user to the organization",
+              "timedOut": null,
+              "duration": 11144,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "newUserPage.accessEndUserPage();\nnewUserPage.createEndUser();\nnewUserPage.enterDetails();",
+              "err": {},
+              "uuid": "c32bc322-8123-47aa-8194-ceed291b3325",
+              "parentUUID": "90ed1356-7940-4d9b-abfd-12dcffbda91b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c32bc322-8123-47aa-8194-ceed291b3325"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 11144,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/.jsons",
+        "charts": true,
+        "reportPageTitle": "My Test Suite",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

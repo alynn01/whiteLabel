@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="663.975" tests="2" failures="2">
+  <testsuite name="Root Suite" timestamp="2023-03-27T14:46:20" tests="0" file="cypress/e2e/cards/loadCard.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Load Card" timestamp="2023-03-27T14:46:20" tests="2" time="663.962" failures="2">
+    <testcase name="Load Card Test that the user is able to access load physical card" time="99.081" classname="Test that the user is able to access load physical card">
+      <failure message="Timed out retrying after 80000ms: Expected to find content: &apos;8852&apos; within the element: &lt;span#dropdownchild.button--loading.isLoading&gt; but never did." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 80000ms: Expected to find content: '8852' within the element: <span#dropdownchild.button--loading.isLoading> but never did.
+    at LoadCardPage.loadPhysicalCard (webpack:///./cypress/support/pages/cards/loadCard-page.js:37:36)
+    at Context.eval (webpack:///./cypress/e2e/cards/loadCard.cy.js:22:21)]]></failure>
+    </testcase>
+    <testcase name="Load Card Test that the user is able to access load virtual card" time="137.079" classname="Test that the user is able to access load virtual card">
+      <failure message="Timed out retrying after 80000ms: Expected to find content: &apos;0034&apos; within the element: &lt;img#dropdownchild.cash-box_value&gt; but never did." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 80000ms: Expected to find content: '0034' within the element: <img#dropdownchild.cash-box_value> but never did.
+    at LoadCardPage.loadVirtualCard (webpack:///./cypress/support/pages/cards/loadCard-page.js:51:36)
+    at Context.eval (webpack:///./cypress/e2e/cards/loadCard.cy.js:31:19)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

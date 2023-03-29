@@ -26,9 +26,9 @@ export class CardToCardTransferPage{
 
   enterTransferDetails(){
     this.cardDropdown().click({force : true})
-    this.cardLastFourDropdownItem().contains("8852").click();
+    this.cardLastFourDropdownItem().contains("7241").click();
     this.amountEntryField().type('1')
-    this.clientIdentification().type('12706293')
+    this.clientIdentification().type('12707634')
     this.lastFourDigits().type('0032')
     this.transferAmountButton().should('be.visible')
 
