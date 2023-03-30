@@ -9,7 +9,7 @@ export class LoadCardPage {
       '[style="z-index: 11;"] > .dropdown-list > .dropdown > app-dropdown-icon > #dropdownchild'
     );
   accountDropdownItem = () =>
-    cy.get(`[id='dropdownchild']`).contains(" USD - 5221323472 ");
+    cy.get(`[id='dropdownchild']`).contains(" USD - 6122256485 ");
   cardDropdown = () =>
     cy.get(
       '[style="z-index: 8;"] > .dropdown-list > .dropdown > app-dropdown-icon > #dropdownchild'
@@ -33,7 +33,8 @@ export class LoadCardPage {
   loadPhysicalCard() {
     this.walletDropdown().click({ force: true });
     this.accountDropdownItem().click();
-    this.cardDropdown().click({ force: true });
+    cy.wait(3000)
+    this.cardDropdown().click();
     this.cardLastFourDropdownItem().contains("8852").click();
     this.amountEntryField().type("1");
     this.addAmountButton().should('be.visible')
@@ -47,6 +48,7 @@ export class LoadCardPage {
     cy.wait(3000)
     this.walletDropdown().click({ force: true });
     this.accountDropdownItem().click();
+    cy.wait(3000)
     this.cardDropdown().click({ force: true });
     this.cardLastFourDropdownItem().contains("0034").click();
     this.amountEntryField().type("1");
