@@ -16,7 +16,7 @@ export const role = {
       role: role.programOwner,
       email: "amatest@yopmail.com",
       password: "P@$sw0rd",
-      urlPath: "https://devcompanyadmin.essolo.com/",
+      
     },
     {
       role: role.cardHolder,

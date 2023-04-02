@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="87.544" tests="6" failures="0">
+  <testsuite name="Root Suite" timestamp="2023-04-02T22:50:52" tests="0" file="cypress/e2e/auth/login.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Login Test" timestamp="2023-04-02T22:50:52" tests="6" time="87.537" failures="0">
+    <testcase name="Login Test Test that user is unable to login with wrong email but correct password" time="15.736" classname="Test that user is unable to login with wrong email but correct password">
+    </testcase>
+    <testcase name="Login Test Test that user is unable to login with correct email but wrong password" time="16.333" classname="Test that user is unable to login with correct email but wrong password">
+    </testcase>
+    <testcase name="Login Test Test that user is unable to login without email but correct password" time="11.300" classname="Test that user is unable to login without email but correct password">
+    </testcase>
+    <testcase name="Login Test Test that user is unable to login with correct email but no password" time="11.103" classname="Test that user is unable to login with correct email but no password">
+    </testcase>
+    <testcase name="Login Test Test that user is unable to login without email or password" time="14.396" classname="Test that user is unable to login without email or password">
+    </testcase>
+    <testcase name="Login Test Test that user is unable to login with valid email and password" time="18.578" classname="Test that user is unable to login with valid email and password">
+    </testcase>
+  </testsuite>
+</testsuites>
