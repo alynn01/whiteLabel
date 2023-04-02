@@ -8,8 +8,5 @@ export * from "./cards/withdrawFromCard-page";
 export * from "./cards/cardToCardTransfer-page";
 export * from "./cards/activatePhysicalCard-page";
 export * from "./cards/createVirtualCard-page";
-export * from "./settings/changeLanguage";
-export * from "./accounts/createUser-page";
-export * from "./program/createProgram-page";
-export * from "./wallet/fundProgram-page";
-export * from "./wallet/fundUser-page"
+export * from "./settings/changeLanguage"
+

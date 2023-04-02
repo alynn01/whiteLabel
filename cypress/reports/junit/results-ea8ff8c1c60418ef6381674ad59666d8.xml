@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="57.685" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2023-04-02T22:41:17" tests="0" file="cypress/e2e/cards/withdrawFromCard.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Withdraw from card" timestamp="2023-04-02T22:41:17" tests="2" time="57.677" failures="0">
+    <testcase name="Withdraw from card Test that the user is able to access withdraw from physical card" time="29.994" classname="Test that the user is able to access withdraw from physical card">
+    </testcase>
+    <testcase name="Withdraw from card Test that the user is able to access withdraw from virtual card" time="27.643" classname="Test that the user is able to access withdraw from virtual card">
+    </testcase>
+  </testsuite>
+</testsuites>

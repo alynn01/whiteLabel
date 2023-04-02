@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="171.890" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2023-04-02T22:47:06" tests="0" file="cypress/e2e/cards/loadCard.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Load Card" timestamp="2023-04-02T22:47:06" tests="2" time="171.882" failures="0">
+    <testcase name="Load Card Test that the user is able to access load physical card" time="33.708" classname="Test that the user is able to access load physical card">
+    </testcase>
+    <testcase name="Load Card Test that the user is able to access load virtual card" time="29.193" classname="Test that the user is able to access load virtual card">
+    </testcase>
+  </testsuite>
+</testsuites>

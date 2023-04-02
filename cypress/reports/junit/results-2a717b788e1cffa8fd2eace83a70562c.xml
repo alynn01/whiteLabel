@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.651" tests="1" failures="1">
+  <testsuite name="Root Suite" timestamp="2023-04-02T22:13:40" tests="1" file="cypress/e2e/accounts/createUser.cy.js" time="0.649" failures="1">
+    <testcase name="An uncaught error was detected outside of a test" time="0.184" classname="An uncaught error was detected outside of a test">
+      <failure message="The following error originated from your test code, not from Cypress.
+
+  &gt; _index2.CreateUserPage is not a constructor
+
+When Cypress detects uncaught errors originating from your test code it will automatically fail the current test.
+
+Cypress could not associate this error to any specific test.
+
+We dynamically generated a new test to display this failure." type="TypeError"><![CDATA[TypeError: The following error originated from your test code, not from Cypress.
+
+  > _index2.CreateUserPage is not a constructor
+
+When Cypress detects uncaught errors originating from your test code it will automatically fail the current test.
+
+Cypress could not associate this error to any specific test.
+
+We dynamically generated a new test to display this failure.
+    at ./cypress/e2e/accounts/createUser.cy.js (webpack:///./cypress/e2e/accounts/createUser.cy.js:5:20)
+    at __webpack_require__ (webpack:///webpack/bootstrap:19:0)
+    at 0 (https://devcardholder.essolo.com/__cypress/tests?p=cypress/e2e/accounts/createUser.cy.js:981:18)
+    at __webpack_require__ (webpack:///webpack/bootstrap:19:0)
+    at eval (webpack:///webpack/bootstrap:83:0)
+    at eval (https://devcardholder.essolo.com/__cypress/tests?p=cypress/e2e/accounts/createUser.cy.js:87:10)
+    at eval (<anonymous>)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

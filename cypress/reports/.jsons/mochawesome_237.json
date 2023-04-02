@@ -1,0 +1,134 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-04-02T22:23:32.992Z",
+    "end": "2023-04-02T22:26:33.749Z",
+    "duration": 180757,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 1,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "50a77fb5-1a8c-4695-8481-a949a2cb9ed8",
+      "title": "",
+      "fullFile": "cypress/e2e/transactions/transaction.cy.js",
+      "file": "cypress/e2e/transactions/transaction.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d9412d59-8766-4062-b19f-3575b508fb6a",
+          "title": "Transactions",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test that user is able to navigate to the transactions page",
+              "fullTitle": "Transactions Test that user is able to navigate to the transactions page",
+              "timedOut": null,
+              "duration": 60241,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/transactions/transaction.cy.js/Transactions -- Test that user is able to navigate to the transactions page (failed).png\"\n      }\n    ],\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/transactions/transaction.cy.js/Transactions -- Test that user is able to navigate to the transactions page (failed) (attempt 2).png\"\n      }\n    ],\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/transactions/transaction.cy.js/Transactions -- Test that user is able to navigate to the transactions page -- before each hook (failed) (attempt 3).png\"\n      }\n    ]\n  ]\n}",
+              "code": "loginPage.login(cardHolder.email, cardHolder.password);\ncy.get('.onboarding-title').contains('Welcome');\ncy.get('.start').contains('Not interested').click();\ncy.get('.title').contains('Amayindi').should('be.visible');\ntransactionPage.accessTransactionPage();",
+              "err": {
+                "message": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `Users/mac/Documents/whiteLabel/whiteLabel/cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Transactions`",
+                "estack": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `Users/mac/Documents/whiteLabel/whiteLabel/cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Transactions`\n    at timedOutWaitingForPageLoad (https://devcardholder.essolo.com/__cypress/runner/cypress_runner.js:137295:72)\n    at <unknown> (https://devcardholder.essolo.com/__cypress/runner/cypress_runner.js:138269:16)\n    at tryCatcher (https://devcardholder.essolo.com/__cypress/runner/cypress_runner.js:8914:23)\n    at <unknown> (https://devcardholder.essolo.com/__cypress/runner/cypress_runner.js:4036:41)\n    at tryCatcher (https://devcardholder.essolo.com/__cypress/runner/cypress_runner.js:8914:23)\n    at Promise._settlePromiseFromHandler (https://devcardholder.essolo.com/__cypress/runner/cypress_runner.js:6849:31)\n    at Promise._settlePromise (https://devcardholder.essolo.com/__cypress/runner/cypress_runner.js:6906:18)\n    at Promise._settlePromise0 (https://devcardholder.essolo.com/__cypress/runner/cypress_runner.js:6951:10)\n    at Promise._settlePromises (https://devcardholder.essolo.com/__cypress/runner/cypress_runner.js:7027:18)\n    at _drainQueueStep (https://devcardholder.essolo.com/__cypress/runner/cypress_runner.js:3621:12)\n    at _drainQueue (https://devcardholder.essolo.com/__cypress/runner/cypress_runner.js:3614:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://devcardholder.essolo.com/__cypress/runner/cypress_runner.js:3630:5)\n    at Async.drainQueues (https://devcardholder.essolo.com/__cypress/runner/cypress_runner.js:3500:14)\nFrom Your Spec Code:\n    at LoginPage.accessLoginModal (webpack:///./cypress/support/pages/shared/login-page.js:11:7)\n    at Context.eval (webpack:///./cypress/e2e/transactions/transaction.cy.js:11:16)",
+                "diff": null
+              },
+              "uuid": "b80b08fe-5987-4e45-b144-360b866cc799",
+              "parentUUID": "d9412d59-8766-4062-b19f-3575b508fb6a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test that user is able to navigate to the transactions details page",
+              "fullTitle": "Transactions Test that user is able to navigate to the transactions details page",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.login(cardHolder.email, cardHolder.password);\ncy.get('.onboarding-title').contains('Welcome');\ncy.get('.start').contains('Not interested').click();\ncy.get('.title').contains('Amayindi').should('be.visible');\ntransactionPage.accessTransactionPage();\ntransactionPage.accessTransactionDetails();\ncy.get('.pdfButton > .formButton').contains('Download receipt').should('be.visible');",
+              "err": {},
+              "uuid": "6df37435-1918-4b5f-b86e-cd895617adcf",
+              "parentUUID": "d9412d59-8766-4062-b19f-3575b508fb6a",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "b80b08fe-5987-4e45-b144-360b866cc799"
+          ],
+          "pending": [],
+          "skipped": [
+            "6df37435-1918-4b5f-b86e-cd895617adcf"
+          ],
+          "duration": 60241,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/.jsons",
+        "charts": true,
+        "reportPageTitle": "My Test Suite",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="228.599" tests="2" failures="1">
+  <testsuite name="Root Suite" timestamp="2023-04-02T22:19:43" tests="0" file="cypress/e2e/cards/withdrawFromCard.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Withdraw from card" timestamp="2023-04-02T22:19:43" tests="2" time="228.592" failures="1">
+    <testcase name="Withdraw from card Test that the user is able to access withdraw from physical card" time="47.870" classname="Test that the user is able to access withdraw from physical card">
+    </testcase>
+    <testcase name="Withdraw from card &quot;before each&quot; hook for &quot;Test that the user is able to access withdraw from virtual card&quot;" time="60.222" classname="&quot;before each&quot; hook for &quot;Test that the user is able to access withdraw from virtual card&quot;">
+      <failure message="Timed out after waiting `60000ms` for your remote page to load.
+
+Your page did not fire its `load` event within `60000ms`.
+
+You can try increasing the `pageLoadTimeout` value in `Users/mac/Documents/whiteLabel/whiteLabel/cypress.config.js` to wait longer.
+
+Browsers will not fire the `load` event until all stylesheets and scripts are done downloading.
+
+When this `load` event occurs, Cypress will continue running commands.
+
+Because this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Withdraw from card`" type="CypressError"><![CDATA[CypressError: Timed out after waiting `60000ms` for your remote page to load.
+
+Your page did not fire its `load` event within `60000ms`.
+
+You can try increasing the `pageLoadTimeout` value in `Users/mac/Documents/whiteLabel/whiteLabel/cypress.config.js` to wait longer.
+
+Browsers will not fire the `load` event until all stylesheets and scripts are done downloading.
+
+When this `load` event occurs, Cypress will continue running commands.
+
+Because this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Withdraw from card`
+    at timedOutWaitingForPageLoad (https://devcardholder.essolo.com/__cypress/runner/cypress_runner.js:137295:72)
+    at <unknown> (https://devcardholder.essolo.com/__cypress/runner/cypress_runner.js:138269:16)
+    at tryCatcher (https://devcardholder.essolo.com/__cypress/runner/cypress_runner.js:8914:23)
+    at <unknown> (https://devcardholder.essolo.com/__cypress/runner/cypress_runner.js:4036:41)
+    at tryCatcher (https://devcardholder.essolo.com/__cypress/runner/cypress_runner.js:8914:23)
+    at Promise._settlePromiseFromHandler (https://devcardholder.essolo.com/__cypress/runner/cypress_runner.js:6849:31)
+    at Promise._settlePromise (https://devcardholder.essolo.com/__cypress/runner/cypress_runner.js:6906:18)
+    at Promise._settlePromise0 (https://devcardholder.essolo.com/__cypress/runner/cypress_runner.js:6951:10)
+    at Promise._settlePromises (https://devcardholder.essolo.com/__cypress/runner/cypress_runner.js:7027:18)
+    at _drainQueueStep (https://devcardholder.essolo.com/__cypress/runner/cypress_runner.js:3621:12)
+    at _drainQueue (https://devcardholder.essolo.com/__cypress/runner/cypress_runner.js:3614:9)
+    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://devcardholder.essolo.com/__cypress/runner/cypress_runner.js:3630:5)
+    at Async.drainQueues (https://devcardholder.essolo.com/__cypress/runner/cypress_runner.js:3500:14)
+From Your Spec Code:
+    at LoginPage.accessLoginModal (webpack:///./cypress/support/pages/shared/login-page.js:11:7)
+    at Context.eval (webpack:///./cypress/e2e/cards/withdrawFromCard.cy.js:12:16)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>
