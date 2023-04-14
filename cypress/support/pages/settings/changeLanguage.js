@@ -3,7 +3,7 @@ export class SettingsPage{
     changeLanguageDropdown = () => cy.get('.pagination-icon');
     pageMessage = () => cy.get('.sub-title').contains('Make changes to your account')
     chooseFrench = () => cy.get(':nth-child(3) > .selector-title_dropdown_list_single').contains(' French ')
-    cardTitle = () => cy.get(':nth-child(5) > .card-content-details > .card-content-text > .card-title').contains(' Choisissez la langue par défaut ')
+    cardTitle = () => cy.get('[class="card-title"]').contains(' Choisissez la langue par défaut ')
 
     accessPage(){
         this.profilePageMenuItem().click({force : true})
