@@ -1,4 +1,5 @@
 const { defineConfig } = require("cypress");
+const { beforeRunHook, afterRunHook } = require('cypress-mochawesome-reporter/lib');
 
 module.exports = defineConfig({
   chromeWebSecurity: false,
@@ -12,30 +13,30 @@ module.exports = defineConfig({
     runMode: 2,
     openMode: 0,
   },
-
+  
   env: {
     MAILOSAUR_API_KEY: "{API KEY}",
   },
-  reporter: "cypress-multi-reporters",
+  reporter: 'cypress-mochawesome-reporter',
   reporterOptions: {
-      reporterEnabled: "cypress-mochawesome-reporter, mocha-junit-reporter",
-      cypressMochawesomeReporterReporterOptions: {
-      reportDir: "cypress/reports",
-      charts: true,
-      reportPageTitle: "My Test Suite",
-      embeddedScreenshots: true,
-      inlineAssets: true
-    },
-    mochaJunitReporterReporterOptions: {
-      mochaFile: "cypress/reports/junit/results-[hash].xml"
-    }
+    charts: true,
+    reportPageTitle: 'custom-title',
+    embeddedScreenshots: true,
+    inlineAssets: true,
+    saveAllAttempts: false,
   },
-  video: false,
-
   e2e: {
     setupNodeEvents(on, config) {
-      require("cypress-terminal-report/src/installLogsPrinter")(on);
+      require('cypress-mochawesome-reporter/plugin')(on);
+      on('before:run', async (details) => {
+        console.log('override before:run');
+        await beforeRunHook(details);
+      });
 
+      on('after:run', async () => {
+        console.log('override after:run');
+        await afterRunHook();
+      });
       on("task", {
         log(message) {
           console.log(message);
