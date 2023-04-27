@@ -13,7 +13,7 @@ export class CardsPage{
     this.cardMenuItem().click();
     this.cardPageMessage().should('be.visible');
     cy.wait(3000)
-    this.cardNumber().should('be.visible');
+    cy.contains("0577").should('be.visible');
  }
 
  viewVirtualCards(){

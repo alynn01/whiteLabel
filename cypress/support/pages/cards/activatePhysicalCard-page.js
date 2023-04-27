@@ -6,12 +6,12 @@ export class ActivatePhysicalCardPage{
     cy.get(`[class='formButton']`).contains(" Activate physical card ");
     pageTitle = () => cy.get(`[class='cardTitle']`).contains('Activate Physical Card');
 
-    enterCardActivationDetails(){
+    enterCardActivationDetails(userId, lastFourDigits){
         this.activatePhysicalCardButton().click({force : true});
         this.pageTitle().should('be.visible');
-        this.clientIdentification().type('23456789');
-        this.lastFourDigits().type('0032');
-        this.activateCardButton().should('be.visible')
+        this.clientIdentification().type(userId);
+        this.lastFourDigits().type(lastFourDigits);
+        this.activateCardButton().click()
 
     }
 }
