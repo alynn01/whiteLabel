@@ -11,7 +11,7 @@ describe("Load Card", () => {
     loginPage.accessLoginModal();
   });
 
-  it("Test that the user is unable to load physical card with insufficient balance in account", () => {
+  it("Test that the user is unable to load physical card with insufficient balance in wallet", () => {
     loginPage.login("damiuser001@yopmail.com", "Password@1");
     cy.get(".onboarding-title").contains("Welcome");
     cy.get(".start").contains("Not interested").click();
