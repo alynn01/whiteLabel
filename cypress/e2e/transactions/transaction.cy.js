@@ -12,18 +12,18 @@ describe('Transactions', () => {
     });
 
     it('Test that user is able to navigate to the transactions page', () => {
-        loginPage.login(cardHolder.email, cardHolder.password);
+        loginPage.login('damiuser001@yopmail.com', 'Password@1');
         cy.get('.onboarding-title').contains('Welcome');
         cy.get('.start').contains('Not interested').click();
-        cy.get('.title').contains('Amayindi').should('be.visible');
+        cy.get('.title').contains('Damilare').should('be.visible');
         transactionPage.accessTransactionPage()
     })
 
     it('Test that user is able to navigate to the transactions details page', () => {
-        loginPage.login(cardHolder.email, cardHolder.password);
+        loginPage.login('damiuser001@yopmail.com', 'Password@1');
         cy.get('.onboarding-title').contains('Welcome');
         cy.get('.start').contains('Not interested').click();
-        cy.get('.title').contains('Amayindi').should('be.visible');
+        cy.get('.title').contains('Damilare').should('be.visible');
         transactionPage.accessTransactionPage();
         transactionPage.accessTransactionDetails();
         cy.get('.pdfButton > .formButton').contains('Download receipt').should('be.visible')

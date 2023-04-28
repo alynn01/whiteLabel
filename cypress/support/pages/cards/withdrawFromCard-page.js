@@ -30,11 +30,13 @@ export class WithdrawalPage {
   enterWithdrawalDetails() {
     this.walletDropdown().click({ force: true });
     this.accountDropdownItem().click();
-    cy.wait(3000)
+    cy.wait(5000)
     this.cardDropdown().click();
+    cy.wait(3000)
     this.cardLastFourDropdownItem().contains("8852").click();
-    this.amountEntryField().type("1");
-    this.withdrawAmountButton().should("be.visible");
+    this.amountEntryField().type("1000000");
+    this.withdrawAmountButton().click();
+    cy.contains("Insufficient funds, top up card balance").should("be.visible")
   }
 
   withdrawFromVirtualCard() {
@@ -46,10 +48,12 @@ export class WithdrawalPage {
       .should("be.visible");
     this.walletDropdown().click({ force: true });
     this.accountDropdownItem().click();
-    cy.wait(3000)
+    cy.wait(5000)
     this.cardDropdown().click({ force: true });
+    cy.wait(3000)
     this.cardLastFourDropdownItem().contains("0034").click();
-    this.amountEntryField().type("1");
-    this.withdrawAmountButton().should("be.visible");
+    this.amountEntryField().type("1000000");
+    this.withdrawAmountButton().click();
+    cy.contains("Insufficient funds, top up card balance").should("be.visible")
   }
 }
