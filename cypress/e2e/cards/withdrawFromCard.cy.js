@@ -19,7 +19,6 @@ describe('Withdraw from card', () => {
         cy.get('.title').contains('Damilare').should('be.visible');
         cy.get('.app-onboarding-menu-cards > .nav-icon').click();
         cy.wait(3000)
-        //cardsPage.accessCardsPage();
         withdrawalPage.accessWithdrawFromCardPage();
         withdrawalPage.enterWithdrawalDetails();
         
@@ -30,7 +29,6 @@ describe('Withdraw from card', () => {
       cy.get('.onboarding-title').contains('Welcome');
       cy.get('.start').contains('Not interested').click();
       cy.get('.title').contains('Damilare').should('be.visible');
-      //cardsPage.accessCardsPage();
       cy.get('.app-onboarding-menu-cards > .nav-icon').click();
       cy.wait(3000)
       withdrawalPage.withdrawFromVirtualCard();
