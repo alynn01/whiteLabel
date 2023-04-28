@@ -10,7 +10,7 @@ export class WithdrawalPage {
   accountDropdownItem = () =>
     cy.get(`[id='dropdownchild']`).contains(" USD - 6122256485 ");
   cardDropdown = () =>
-  cy.get('[style="z-index: 8;"] > .dropdown-list > .dropdown > app-dropdown-icon > #dropdownchild');
+    cy.get('[style="z-index: 8;"] > .dropdown-list > .dropdown > app-dropdown-icon > #dropdownchild');
   cardLastFourDropdownItem = () => cy.get(`[id='dropdownchild']`);
   amountEntryField = () => cy.get(".form-input > .formInput");
 
@@ -19,7 +19,7 @@ export class WithdrawalPage {
 
   toggleButton = () => cy.get("toggle-icon > .toggle-wrapper");
 
-  accessWithdrawFromCardPage(){
+  accessWithdrawFromCardPage() {
     this.moreOptionsDropdown().click({ force: true });
     this.withdrawFromCardDropdownItem().click();
     this.pageTitle()
@@ -27,18 +27,19 @@ export class WithdrawalPage {
       .should("be.visible");
   }
 
-  enterWithdrawalDetails(){
+  enterWithdrawalDetails() {
     this.walletDropdown().click({ force: true });
     this.accountDropdownItem().click();
     cy.wait(6000)
     this.cardDropdown().click();
+    cy.wait(3000)
     this.cardLastFourDropdownItem().contains("8852").click();
     this.amountEntryField().type("100000");
+    this.amountEntryField().type("1000000");
     this.withdrawAmountButton().click();
     cy.contains("Insufficient funds, top up card balance").should("be.visible")
   }
-
-  withdrawFromVirtualCard(){
+  withdrawFromVirtualCard() {
     this.toggleButton().click({ force: true });
     this.moreOptionsDropdown().click({ force: true });
     this.withdrawFromCardDropdownItem().click();
@@ -47,14 +48,16 @@ export class WithdrawalPage {
       .should("be.visible");
     this.walletDropdown().click({ force: true });
     this.accountDropdownItem().click();
+
     cy.wait(6000)
     this.cardDropdown().click({ force: true });
+    cy.wait(3000)
     this.cardLastFourDropdownItem().contains("0034").click();
     this.amountEntryField().type("1");
     this.withdrawAmountButton().should("be.visible");
-    
+
   }
-  enterWithdrawalDetailsWithoutAmount(){
+  enterWithdrawalDetailsWithoutAmount() {
     this.walletDropdown().click({ force: true });
     this.accountDropdownItem().click();
     cy.wait(6000)
@@ -63,7 +66,7 @@ export class WithdrawalPage {
     this.withdrawAmountButton().click();
     cy.get(`input[placeholder="Amount Required"]`).should("be.visible")
   }
-  enterWithdrawalDetailsWithoutSelectingCard(){
+  enterWithdrawalDetailsWithoutSelectingCard() {
     this.walletDropdown().click({ force: true });
     this.accountDropdownItem().click();
     cy.wait(6000)
@@ -73,15 +76,18 @@ export class WithdrawalPage {
     this.withdrawAmountButton().click();
     cy.contains("Card Required").should("be.visible")
   }
-  enterWithdrawalDetailsWithoutSelectingWallet(){
+  enterWithdrawalDetailsWithoutSelectingWallet() {
     // this.walletDropdown().click({ force: true });
     // this.accountDropdownItem().click();
     // cy.wait(6000)
     this.cardDropdown().click();
-    this.cardLastFourDropdownItem().contains("8852").click({force: true});
+    this.cardLastFourDropdownItem().contains("8852").click({ force: true });
     this.amountEntryField().type("1");
     this.withdrawAmountButton().click();
     cy.contains("Wallet Required").should("be.visible")
+    this.amountEntryField().type("1000000");
+    this.withdrawAmountButton().click();
+    cy.contains("Insufficient funds, top up card balance").should("be.visible")
   }
 }
 
