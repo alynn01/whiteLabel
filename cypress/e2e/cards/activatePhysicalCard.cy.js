@@ -37,14 +37,14 @@ describe('Activate Physical Card', () => {
       cy.contains("Last four digits can not be less than four (4) numbers").should("be.visible")
   })
 
-  it('Test that the user is unable to activate physical card with details that dont exist on the system', () => {
-    loginPage.login(cardHolder.email, cardHolder.password);
-    cy.get('.onboarding-title').contains('Welcome');
-    cy.get('.start').contains('Not interested').click();
-    cy.get('.title').contains('Amayindi').should('be.visible');
-    cardsPage.accessCardsPage();
-    activatePhysicalCard.enterCardActivationDetails("12707767", "0570");
-    cy.contains("AccountId [12737767] not found").should("be.visible")
+it('Test that the user is unable to activate physical card with last four digits that dont match client id', () => {
+  loginPage.login(cardHolder.email, cardHolder.password);
+  cy.get('.onboarding-title').contains('Welcome');
+  cy.get('.start').contains('Not interested').click();
+  cy.get('.title').contains('Amayindi').should('be.visible');
+  cardsPage.accessCardsPage();
+  activatePhysicalCard.enterCardActivationDetails(validUserId, "9820");
+  cy.contains("Last 4 digits: 9820 invalid").should("be.visible")
 })
 
 })

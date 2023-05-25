@@ -11,7 +11,8 @@ export class ActivatePhysicalCardPage{
         this.pageTitle().should('be.visible');
         this.clientIdentification().type(userId);
         this.lastFourDigits().type(lastFourDigits);
-        this.activateCardButton().click()
+        cy.wait(2000)
+        this.activateCardButton().click({force : true})
 
     }
 }

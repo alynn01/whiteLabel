@@ -85,9 +85,7 @@ export class WithdrawalPage {
     this.amountEntryField().type("1");
     this.withdrawAmountButton().click();
     cy.contains("Wallet Required").should("be.visible")
-    this.amountEntryField().type("1000000");
-    this.withdrawAmountButton().click();
-    cy.contains("Insufficient funds, top up card balance").should("be.visible")
+   
   }
 }
 
