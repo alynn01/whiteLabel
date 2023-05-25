@@ -40,7 +40,7 @@ export class LoadCardPage {
     cy.wait(3000)
     this.amountEntryField().type("100000");
     this.addAmountButton().click();
-    cy.contains("Insufficient funds, top up wallet balance").should("be.visible")
+    cy.contains("Insufficient funds, fund wallet first").should("be.visible")
   }
 
   loadPhysicalCardWithoutAmount() {
@@ -86,7 +86,7 @@ export class LoadCardPage {
     this.cardLastFourDropdownItem().contains("0034").click();
     this.amountEntryField().type("1000000");
     this.addAmountButton().click()
-    cy.contains("Insufficient funds, top up wallet balance").should("be.visible")
+    cy.contains("Insufficient funds, fund wallet first").should("be.visible")
   }
 
   loadVirtualCardWithoutAmount(){
