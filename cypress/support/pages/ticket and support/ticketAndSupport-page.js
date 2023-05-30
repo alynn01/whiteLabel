@@ -42,6 +42,24 @@ export class TicketAndSupportPage {
     this.selectIssue().click();
     this.subjectTitle().type("Automated Test Ticktet");
     this.description().type("Automation description");
+  }
+
+  uploadInvalidFile(){
+    const fileToUpload = "uploadthis.png";
+    cy.get('.file-upload-input').attachFile(fileToUpload)
+  }
+
+  clickSubmitButton(){
     this.submitTicketButton().click();
+  }
+
+  uploadValidFile(){
+    const fileToUpload = "sta.pdf";
+    cy.get('.file-upload-input').attachFile(fileToUpload)
+  }
+
+  uploadLargeFile(){
+    const fileToUpload = "Transactions-history.pdf";
+    cy.get('.file-upload-input').attachFile(fileToUpload)
   }
 }
