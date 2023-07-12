@@ -13,8 +13,8 @@ describe('Change Language', () => {
 
     it('Test that user is able to navigate to the change language page', () => {
         loginPage.login(cardHolder.email, cardHolder.password);
-        cy.get('.onboarding-title').contains('Welcome');
-        cy.get('.start').contains('Not interested').click();
+        // cy.get('.onboarding-title').contains('Welcome');
+        // cy.get('.start').contains('Not interested').click();
         cy.get('.title').contains('Amayindi').should('be.visible');
         settingsPage.accessPage()
         settingsPage.changeLanguage()

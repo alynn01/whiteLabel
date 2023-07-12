@@ -1,6 +1,6 @@
 export class CardsPage{
  cardMenuItem = () => cy.get('.app-onboarding-menu-cards > .nav-icon').contains('Cards');
- cardPageMessage = () => cy.get('.sub-title').contains('View all activites on your cards/wallet');
+ cardPageMessage = () => cy.get('.sub-title').contains('View all activites on your cards');
  cardNumber = () => cy.get('.default-page_text').contains("No USD physical cards added")
  toggleButton = () => cy.get('toggle-icon > .toggle-wrapper');
  viewCardDetailsButton = () => cy.get("div[id='1'] div[class='card-detail-wrapper']").contains('View card details');

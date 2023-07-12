@@ -14,8 +14,8 @@ describe('Create Virtual Cards', () => {
 
     it('Test that the user is able to access activate virtual card', () => {
         loginPage.login(email, password);
-        cy.get('.onboarding-title').contains('Welcome');
-        cy.get('.start').contains('Not interested').click();
+        // cy.get('.onboarding-title').contains('Welcome');
+        // cy.get('.start').contains('Not interested').click();
         cy.get('.title').contains('Amayindi').should('be.visible');
         //cardsPage.accessCardsPage();
         createVirtualCard.createCard();

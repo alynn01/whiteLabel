@@ -1,6 +1,6 @@
 export class TransactionPage{
     transactionMenuItem = () => cy.get('.app-onboarding-menu-transactions > .nav-icon > .nav-text').contains('Transactions');
-    transactionPageMessage = () => cy.get('.sub-title').contains('View all transactions on your card/wallet');
+    transactionPageMessage = () => cy.get('.sub-title').contains('View all transactions on your card(s)');
     currency = () => cy.get(':nth-child(4) > :nth-child(2) > .table-content').contains('USD')
     viewTransactionDetails = () => cy.get(':nth-child(8) > :nth-child(2) > .table-content').contains('More details');
     transactionStatusMessage = () => cy.get('.transaction-status-wrapper').contains('Transaction was successful')
