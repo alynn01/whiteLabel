@@ -18,8 +18,8 @@ describe('Activate Physical Card', () => {
 
     it('Test that the user is unable to activate physical card that has already been activated', () => {
         loginPage.login(cardHolder.email, cardHolder.password);
-        cy.get('.onboarding-title').contains('Welcome');
-        cy.get('.start').contains('Not interested').click();
+        // cy.get('.onboarding-title').contains('Welcome');
+        // cy.get('.start').contains('Not interested').click();
         cy.get('.title').contains('Amayindi').should('be.visible');
         cardsPage.accessCardsPage();
         activatePhysicalCard.enterCardActivationDetails(validUserId, validFourDigits);
@@ -28,8 +28,8 @@ describe('Activate Physical Card', () => {
 
     it('Test that the user is unable to activate physical card with invalid details', () => {
       loginPage.login(cardHolder.email, cardHolder.password);
-      cy.get('.onboarding-title').contains('Welcome');
-      cy.get('.start').contains('Not interested').click();
+      // cy.get('.onboarding-title').contains('Welcome');
+      // cy.get('.start').contains('Not interested').click();
       cy.get('.title').contains('Amayindi').should('be.visible');
       cardsPage.accessCardsPage();
       activatePhysicalCard.enterCardActivationDetails(invalidUserId, invalidFourDigits);
@@ -39,8 +39,8 @@ describe('Activate Physical Card', () => {
 
 it('Test that the user is unable to activate physical card with last four digits that dont match client id', () => {
   loginPage.login(cardHolder.email, cardHolder.password);
-  cy.get('.onboarding-title').contains('Welcome');
-  cy.get('.start').contains('Not interested').click();
+  // cy.get('.onboarding-title').contains('Welcome');
+  // cy.get('.start').contains('Not interested').click();
   cy.get('.title').contains('Amayindi').should('be.visible');
   cardsPage.accessCardsPage();
   activatePhysicalCard.enterCardActivationDetails(validUserId, "9820");

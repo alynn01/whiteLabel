@@ -15,16 +15,16 @@ describe('Cards', () => {
 
     it('Test that user is able to navigate to the cards page', () => {
         loginPage.login(cardHolder.email, cardHolder.password);
-        cy.get('.onboarding-title').contains('Welcome');
-        cy.get('.start').contains('Not interested').click();
+        // cy.get('.onboarding-title').contains('Welcome');
+        // cy.get('.start').contains('Not interested').click();
         cy.get('.title').contains('Amayindi').should('be.visible');
         cardsPage.accessCardsPage();
     })
 
     it('Test that the user is able to view virtual cards', () => {
         loginPage.login(email, password);
-        cy.get('.onboarding-title').contains('Welcome');
-        cy.get('.start').contains('Not interested').click();
+        // cy.get('.onboarding-title').contains('Welcome');
+        // cy.get('.start').contains('Not interested').click();
         cy.get('.title').contains('Amayindi').should('be.visible');
         cardsPage.viewVirtualCards();
     })

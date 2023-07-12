@@ -8,7 +8,7 @@ export class TicketAndSupportPage {
     cy
       .get(`[class="title"]`)
       .contains(
-        "As a Program Owner, can I have multi-currency company accounts?"
+        "How can an end-user activate a card?"
       );
   viewTicketPage = () =>
     cy.get(`[class*="formButton"]`).contains(" View Tickets ");

@@ -21,24 +21,24 @@ describe('Login Test', () => {
   })
 
   it('Test that user is unable to login without email but correct password', () => {
-    cy.get(':nth-child(2) > .column > form-input-large > .formInputWrapper').type(cardHolder.password);
+    cy.get('input[type="password"]').type(cardHolder.password);
     cy.get('.portal-container_header > :nth-child(2)').contains('Gain access. Change your life.').should('be.visible')
   })
 
   it('Test that user is unable to login with correct email but no password', () => {
-    cy.get(':nth-child(1) > .column > form-input-large > .formInputWrapper').type(cardHolder.email);
+    cy.get('input[type="email"]').type(cardHolder.email);
     cy.get('.portal-container_header > :nth-child(2)').contains('Gain access. Change your life.').should('be.visible')
   })
 
   it('Test that user is unable to login without email or password', () => {
-    cy.get('.form-button').contains('Login').click();
+    cy.get(`[class="button-text"]`).contains("Login").click();
     cy.get('.portal-container_header > :nth-child(2)').contains('Gain access. Change your life.').should('be.visible')
   })
 
   it('Test that user is unable to login with valid email and password', () => {
     loginPage.login(cardHolder.email, cardHolder.password);
-    cy.get('.onboarding-title').contains('Welcome');
-    cy.get('.start').contains('Not interested').click();
+    // cy.get('.onboarding-title').contains('Welcome');
+    // cy.get('.start').contains('Not interested').click();
     cy.get('.title').contains('Amayindi').should('be.visible');
     
   })

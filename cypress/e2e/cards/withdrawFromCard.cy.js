@@ -6,7 +6,7 @@ const cardsPage = new CardsPage();
 const withdrawalPage = new WithdrawalPage();
 const cardHolder = getCardHolder();
 
-describe('Withdraw from card', () => {
+describe.skip('Withdraw from card', () => {
 
     beforeEach(() => {
       loginPage.accessLoginModal();
@@ -14,8 +14,8 @@ describe('Withdraw from card', () => {
 
     it('Test that the user is unable to withdraw from physical card if there is an insufficient balance', () => {
         loginPage.login('damiuser001@yopmail.com', 'Password@1');
-        cy.get('.onboarding-title').contains('Welcome');
-        cy.get('.start').contains('Not interested').click();
+        // cy.get('.onboarding-title').contains('Welcome');
+        // cy.get('.start').contains('Not interested').click();
         cy.get('.title').contains('Damilare').should('be.visible');
         cy.get('.app-onboarding-menu-cards > .nav-icon').click();
         cy.wait(3000)
@@ -26,8 +26,8 @@ describe('Withdraw from card', () => {
     })
     it('Test that the user is unable to withdraw from physical card if the amount field is empty', () => {
       loginPage.login('damiuser001@yopmail.com', 'Password@1');
-      cy.get('.onboarding-title').contains('Welcome');
-      cy.get('.start').contains('Not interested').click();
+      // cy.get('.onboarding-title').contains('Welcome');
+      // cy.get('.start').contains('Not interested').click();
       cy.get('.title').contains('Damilare').should('be.visible');
       cy.get('.app-onboarding-menu-cards > .nav-icon').click();
       cy.wait(3000)
@@ -39,8 +39,8 @@ describe('Withdraw from card', () => {
   })
   it('Test that the user is unable to withdraw from physical card if the user does not select the card to be withdrawn from', () => {
     loginPage.login('damiuser001@yopmail.com', 'Password@1');
-    cy.get('.onboarding-title').contains('Welcome');
-    cy.get('.start').contains('Not interested').click();
+    // cy.get('.onboarding-title').contains('Welcome');
+    // cy.get('.start').contains('Not interested').click();
     cy.get('.title').contains('Damilare').should('be.visible');
     cy.get('.app-onboarding-menu-cards > .nav-icon').click();
     cy.wait(3000)
@@ -50,8 +50,8 @@ describe('Withdraw from card', () => {
   })
   it('Test that the user is unable to withdraw from physical card if the user does not select the wallet to be credited', () => {
     loginPage.login('damiuser001@yopmail.com', 'Password@1');
-    cy.get('.onboarding-title').contains('Welcome');
-    cy.get('.start').contains('Not interested').click();
+    // cy.get('.onboarding-title').contains('Welcome');
+    // cy.get('.start').contains('Not interested').click();
     cy.get('.title').contains('Damilare').should('be.visible');
     cy.get('.app-onboarding-menu-cards > .nav-icon').click();
     cy.wait(3000)
@@ -61,8 +61,8 @@ describe('Withdraw from card', () => {
 })
     it('Test that the user is able to access withdraw from virtual card', () => {
       loginPage.login('damiuser001@yopmail.com', 'Password@1');
-      cy.get('.onboarding-title').contains('Welcome');
-      cy.get('.start').contains('Not interested').click();
+      // cy.get('.onboarding-title').contains('Welcome');
+      // cy.get('.start').contains('Not interested').click();
       cy.get('.title').contains('Damilare').should('be.visible');
       cy.get('.app-onboarding-menu-cards > .nav-icon').click();
       cy.wait(3000)

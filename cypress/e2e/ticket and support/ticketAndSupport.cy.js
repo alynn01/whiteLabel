@@ -9,8 +9,8 @@ describe("Help and Ticket", () => {
   beforeEach(() => {
     loginPage.accessLoginModal();
     loginPage.login(cardHolder.email, cardHolder.password);
-    cy.get(".onboarding-title").contains("Welcome");
-    cy.get(".start").contains("Not interested").click();
+    // cy.get(".onboarding-title").contains("Welcome");
+    // cy.get(".start").contains("Not interested").click();
     cy.get(".title").contains("Amayindi").should("be.visible");
   });
 

@@ -12,8 +12,8 @@ describe("Account", () => {
 
   it("Test that user is able to navigate to the accounts page", () => {
     loginPage.login(cardHolder.email, cardHolder.password);
-    cy.get(".onboarding-title").contains("Welcome");
-    cy.get(".start").contains("Not interested").click();
+    // cy.get(".onboarding-title").contains("Welcome");
+    // cy.get(".start").contains("Not interested").click();
     cy.get(".title").contains("Amayindi").should("be.visible");
     accountsPage.accessAccountsPage();
   });
