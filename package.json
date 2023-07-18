@@ -20,14 +20,18 @@
   "dependencies": {
     "cypress": "^12.7.0",
     "cypress-file-upload": "^5.0.8",
+    "cypress-mailosaur": "^2.13.0",
     "cypress-mochawesome-reporter": "^3.4.0",
     "cypress-multi-reporters": "^1.6.2",
-    "cypress-terminal-report": "^5.0.2",
+    "cypress-terminal-report": "^5.3.2",
     "junit-report-merger": "^5.0.0",
     "mocha": "^10.2.0",
-    "mocha-junit-reporter": "^2.2.0"
+    "mocha-junit-reporter": "^2.2.0",
+    "node": "^18.14.2"
   },
   "devDependencies": {
-    "@testing-library/cypress": "^9.0.0"
+    "@testing-library/cypress": "^9.0.0",
+    "jsdom": "^22.1.0",
+    "mailosaur": "^8.6.1"
   }
 }

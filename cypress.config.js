@@ -1,8 +1,10 @@
 const { defineConfig } = require("cypress");
 const { beforeRunHook, afterRunHook } = require('cypress-mochawesome-reporter/lib');
 
+
 module.exports = defineConfig({
   chromeWebSecurity: false,
+  entry: './path/to/my/entry/file.js',
   defaultCommandTimeout: 80000,
   pageLoadTimeout: 80000,
   watchForFileChanges: false,
@@ -13,9 +15,10 @@ module.exports = defineConfig({
     runMode: 2,
     openMode: 0,
   },
+
   
   env: {
-    MAILOSAUR_API_KEY: "{API KEY}",
+    MAILOSAUR_API_KEY: "I5b0HDwZ6lXfIEalGl3SPWYZyFOUIAcy",
   },
   reporter: 'cypress-mochawesome-reporter',
   reporterOptions: {

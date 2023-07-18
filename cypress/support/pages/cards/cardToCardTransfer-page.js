@@ -18,6 +18,8 @@ export class CardToCardTransferPage {
 
   toggleButton = () => cy.get("toggle-icon > .toggle-wrapper");
 
+  
+
   accessCardToCardTransferPage() {
     this.moreOptionsDropdown().click({ force: true });
     this.cardToCardTransferDropdownItem().click();
@@ -26,19 +28,19 @@ export class CardToCardTransferPage {
 
   enterTransferDetails(figure) {
     this.cardDropdown().click({ force: true });
-    this.cardLastFourDropdownItem().contains("7241").click();
+    this.cardLastFourDropdownItem().contains("0698").click();
     this.amountEntryField().type(figure);
-    this.clientIdentification().type("12707634");
-    this.lastFourDigits().type("0032");
+    this.clientIdentification().type("12707764");
+    this.lastFourDigits().type("0577");
     cy.wait(3000)
     this.transferAmountButton().click({ force: true });
   }
 
   dontEnterTransferAmount(){
     this.cardDropdown().click({ force: true });
-    this.cardLastFourDropdownItem().contains("7241").click();
-    this.clientIdentification().type("12707634");
-    this.lastFourDigits().type("0032");
+    this.cardLastFourDropdownItem().contains("0698").click();
+    this.clientIdentification().type("12707764");
+    this.lastFourDigits().type("0577");
     cy.wait(3000)
     this.transferAmountButton().click({ force: true });
     cy.wait(3000)
@@ -47,11 +49,28 @@ export class CardToCardTransferPage {
 
   dontEnterReceiverCardDetails(figure) {
     this.cardDropdown().click({ force: true });
-    this.cardLastFourDropdownItem().contains("7241").click();
+    this.cardLastFourDropdownItem().contains("0698").click();
     this.amountEntryField().type(figure);
     cy.wait(3000)
     this.transferAmountButton().click({ force: true });
     cy.get(`input[placeholder="Client Identification Required"]`).should("be.visible")
     cy.get(`input[placeholder="Last four digits Required"]`).should("be.visible")
+  }
+
+  getVerificationOTP() {
+    const date = new Date();
+    const serverId = "bnzgkkfu";
+    const searchCriteria = { sentTo: "funduseerr@bnzgkkfu.mailosaur.net" };
+    return cy
+      .mailosaurGetMessage(serverId, searchCriteria, {
+        sentTo: "funduser@bnzgkkfu.mailosaur.net",
+        receivedAfter: date.setDate(date.getDate()),
+        timeout: 40000,
+      })
+      .then((email) => {
+        expect(email.subject).to.equal("Ujay Enterprises OTP");
+        return email.html.codes[0].value;
+      });
+      
   }
 }
