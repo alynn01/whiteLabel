@@ -23,7 +23,7 @@ describe('Activate Physical Card', () => {
         cy.get('.title').contains('Amayindi').should('be.visible');
         cardsPage.accessCardsPage();
         activatePhysicalCard.enterCardActivationDetails(validUserId, validFourDigits);
-        cy.contains("Card Already Registered")
+        cy.contains("User already has a card")
     })
 
     it('Test that the user is unable to activate physical card with invalid details', () => {

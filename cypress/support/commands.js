@@ -24,4 +24,27 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
-import 'cypress-file-upload'
+import 'cypress-file-upload';
+
+import "cypress-mailosaur";
+
+const Mailosaur = require('mailosaur');
+
+Cypress.Commands.add('assertEmailHtmlContent', (serverId, criteria, expectedHtmlContent) => {
+  const mailosaurClient = new Mailosaur(process.env.MAILOSAUR_API_KEY);
+
+  return mailosaurClient.messages.search(serverId, criteria)
+    .then((messages) => {
+      if (messages.items.length === 0) {
+        throw new Error(`No emails found matching the criteria: ${JSON.stringify(criteria)}`);
+      }
+
+      const lastMessageId = messages.items[messages.items.length - 1].id;
+
+      return mailosaurClient.messages.getById(lastMessageId)
+        .then((message) => {
+          const actualHtmlContent = message.html.body;
+          expect(actualHtmlContent).to.equal(expectedHtmlContent);
+        });
+    });
+});

@@ -9,5 +9,6 @@ export * from "./cards/cardToCardTransfer-page";
 export * from "./cards/activatePhysicalCard-page";
 export * from "./cards/createVirtualCard-page";
 export * from "./settings/changeLanguage";
-export * from "./ticket and support/ticketAndSupport-page"
+export * from "./ticket and support/ticketAndSupport-page";
+export * from "./onboarding/onboard-page"
 
