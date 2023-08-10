@@ -35,7 +35,7 @@ describe('Activate Physical Card', () => {
       activatePhysicalCard.enterCardActivationDetails(invalidUserId, invalidFourDigits);
       cy.contains("Client Identification can not be less than eight (8) numbers").should("be.visible")
       cy.contains("Last four digits can not be less than four (4) numbers").should("be.visible")
-  })
+    })
 
 it('Test that the user is unable to activate physical card with last four digits that dont match client id', () => {
   loginPage.login(cardHolder.email, cardHolder.password);

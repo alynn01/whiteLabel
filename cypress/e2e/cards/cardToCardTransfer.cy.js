@@ -15,7 +15,7 @@ let smallAmount = "1";
 
 describe("Card to card transfer", () => {
   beforeEach(() => {
-    cy.visit("https://stagingcardholder.essolo.com/onboarding/signin")
+    loginPage.accessLoginModal()
   });
 
   it("Test that the user is unable to carryout card to card transfer with insufficient funds", () => {

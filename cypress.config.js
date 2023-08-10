@@ -5,8 +5,8 @@ const { beforeRunHook, afterRunHook } = require('cypress-mochawesome-reporter/li
 module.exports = defineConfig({
   chromeWebSecurity: false,
   entry: './path/to/my/entry/file.js',
-  defaultCommandTimeout: 80000,
-  pageLoadTimeout: 80000,
+  defaultCommandTimeout: 90000,
+  pageLoadTimeout: 90000,
   watchForFileChanges: false,
   viewportWidth: 1280,
   viewportHeight: 800,
@@ -50,7 +50,7 @@ module.exports = defineConfig({
       const baseUrl =
         config.env.APP_ENV === "production"
           ? "https://cardholder.essolo.com/"
-          : "https://stagingcardholder.essolo.com/";
+          : "https://devcardholder-safex.essolo.com/";
 
       config.baseUrl = baseUrl;
 

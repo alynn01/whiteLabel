@@ -16,7 +16,7 @@ export const role = {
       role: role.programOwner,
       email: "amatest@yopmail.com",
       password: "P@$sw0rd",
-      url: "https://stagingcompanyadmin.essolo.com/",
+      url: "https://devcompanyadmin-safex.essolo.com/",
       
     },
     {
