@@ -40,8 +40,7 @@ export class OnboardPage {
   calendarScroll = () =>
     cy.get(".react-datepicker__year-dropdown > :nth-child(13)");
   select1994 = () =>
-    cy
-      .get(".react-datepicker__year-dropdown > :nth-child(12)")
+  cy.get(':nth-child(1) > .formInputWrapper > .form-input-detail > .form-input > ngx-daterangepicker-material > .md-drppicker > .calendar > .calendar-table > .table-condensed > thead > :nth-child(1) > .month > :nth-child(2) > .yearselect')
       .contains("1994");
   select08 = () => cy.get(".react-datepicker__day--008");
   newPasswordField = () => cy.get(
@@ -53,9 +52,7 @@ export class OnboardPage {
   calendarDropdown = () => cy.get(
     ":nth-child(2) > .column > :nth-child(2) > .cardRow > :nth-child(1) > .formInputWrapper > .form-input-detail > .form-input > .formInput"
   );
-  select1994 = () => cy.get(
-    ":nth-child(1) > .formInputWrapper > .form-input-detail > .form-input > ngx-daterangepicker-material > .md-drppicker > .calendar > .calendar-table > .table-condensed > thead > :nth-child(1) > .month > :nth-child(2) > .yearselect"
-  );
+  selectt1994 = () => cy.get('.react-datepicker__year-dropdown > :nth-child(12)');
   select2027 = () =>  cy.get(
     ":nth-child(2) > .formInputWrapper > .form-input-detail > .form-input > ngx-daterangepicker-material > .md-drppicker > .calendar > .calendar-table > .table-condensed > thead > :nth-child(1) > .month > :nth-child(2) > .yearselect"
   );
@@ -96,7 +93,7 @@ export class OnboardPage {
     times(8, () => {
       this.calendarScroll().click();
     });
-    this.select1994().click({ force: true });
+    this.selectt1994().click({ force: true });
     this.select08().click({ force: true });
     this.createUserButton().click();
     cy.contains(`User, Amayindi Lynn has been created successfully`).should(
@@ -190,7 +187,7 @@ export class OnboardPage {
     cy.wait(3000);
     cy.get('input[placeholder="Identification number*"]').type("AY289Y1");
     this.calendarDropdown().click();
-    this.select1994.select("1994");
+    cy.get(':nth-child(1) > .formInputWrapper > .form-input-detail > .form-input > ngx-daterangepicker-material > .md-drppicker > .calendar > .calendar-table > .table-condensed > thead > :nth-child(1) > .month > :nth-child(2) > .yearselect').select("1994");
     cy.get(
       ":nth-child(1) > .formInputWrapper > .form-input-detail > .form-input > ngx-daterangepicker-material > .md-drppicker > .calendar > .calendar-table > .table-condensed > tbody.drp-animate > :nth-child(3) > :nth-child(4)"
     ).click();
@@ -228,6 +225,7 @@ export class OnboardPage {
   }
 
   takeSelfie(){
+   // cy.get('[type="inverse"] > .enabled > .button-text').contains("Open Camera").click();
     cy.get(`img[class="actionBtn"]`).click();
     cy.get('[class="button-text"]').contains(` Upload and continue `).click({force:true});
     cy.contains("You have successfully submitted your KYC (Know Your Customer) documentation").should("be.visible")
