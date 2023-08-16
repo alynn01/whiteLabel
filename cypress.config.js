@@ -50,7 +50,7 @@ module.exports = defineConfig({
       const baseUrl =
         config.env.APP_ENV === "production"
           ? "https://cardholder.essolo.com/"
-          : "https://stagingcardholder-safex.essolo.com/";
+          : "https://stagingcardholder.essolo.com/";
 
       config.baseUrl = baseUrl;
 

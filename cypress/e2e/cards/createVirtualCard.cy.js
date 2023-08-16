@@ -15,9 +15,6 @@ describe('Create Virtual Cards', () => {
         loginPage.login("funduseerr@bnzgkkfu.mailosaur.net", "Test@123");
         // cy.get('.onboarding-title').contains('Welcome');
         // cy.get('.start').contains('Not interested').click();
-        cy.get('button[id="onesignal-slidedown-cancel-button"]')
-            .should("contain", "Later")
-            .click();
         cy.get('.title').contains('Amayindi').should('be.visible');
         //cardsPage.accessCardsPage();
         createVirtualCard.createCard();
