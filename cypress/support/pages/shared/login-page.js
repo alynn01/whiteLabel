@@ -23,6 +23,9 @@ export class LoginPage {
   login = (email, password) => {
     this.emailField().type(email);
     this.passwordField().type(password);
+    cy.get('button[id="onesignal-slidedown-cancel-button"]')
+            .should("contain", "Later")
+            .click();
     return this.clickLogin();
   };
 }

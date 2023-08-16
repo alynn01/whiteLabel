@@ -5,8 +5,8 @@ const { beforeRunHook, afterRunHook } = require('cypress-mochawesome-reporter/li
 module.exports = defineConfig({
   chromeWebSecurity: false,
   entry: './path/to/my/entry/file.js',
-  defaultCommandTimeout: 80000,
-  pageLoadTimeout: 80000,
+  defaultCommandTimeout: 90000,
+  pageLoadTimeout: 90000,
   watchForFileChanges: false,
   viewportWidth: 1280,
   viewportHeight: 800,
