@@ -38,14 +38,14 @@ export const role = {
     
     {
         role: role.programOwner,
-        email: "damiuser001@yopmail.com",
-        password: "Password@1",
+        email: "",
+        password: "",
         name: "",
       },
       {
         role: role.cardHolder,
-        email: "",
-        password: "",
+        email: "autouser@qa.team",
+        password: "P@$sw0rd",
       },
       
       {
