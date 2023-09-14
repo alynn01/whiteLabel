@@ -12,10 +12,8 @@ jobs:
        uses: actions/checkout@v2
        
      - name: Run Cypress Test
-       uses: cypress-io/github-action@v4
+       uses: cypress-io/github-action@v6 --force
        with:
-         build: npm run build
-         start: npm start
          command: npx cypress run
          browser: chrome
         
